@@ -1,0 +1,38 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+<div class="container page-body">
+  <div class="row">
+    <div class="col-12">
+      <h1>Hello, World</h1>
+      <p>Lorem ipsum dolor sit amet, sea ex omittam adolescens referrentur, qui
+        ne lucilius inimicus eprehendunt. Ei esse vitae quo, cu eos dolor solet
+        voluptua, docendi eloquentiam usu ei. Sea no rebum movet graece, ex
+        mentitum explicari interesset qui, summo molestie similique qui ad.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h2>Featured</h2>
+    </div>
+  </div>
+  <div class="row">
+    {{ $featuredPosts := .Site.Taxonomies.featured.true }}
+    {{ range first 3 $featuredPosts.Pages }}
+      <div class="col-4">
+        <a href="{{ .Permalink}}">
+          <div class="featured-container" style="background-image: url({{ .Params.featured_img }});">
+            <div class="gradient-overlay">
+              <div class="well">
+                <h1>{{ .LinkTitle }}</h1>
+                {{ range .Params.tags }}
+                  <span class="post-tag">{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ partial "footer.html" . }}

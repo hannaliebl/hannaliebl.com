@@ -1,0 +1,16 @@
+# .Site config
+baseurl = "http://www.hannaliebl.com/"
+languageCode = "en-us"
+title = "Hanna Liebl's Site: Web Development Writing and Projects"
+description = ""
+pluralizelisttitles = false
+preserveTaxonomyNames = true
+paginate = 3
+
+[author]
+  name = "Hanna Liebl"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  featured = "featured"

@@ -1,0 +1,94 @@
+$primary-text-color: #444;
+$primary-link-color: #338772;
+$primary-nav-color: #fff;
+$sans-serif-main:"Lato", "Helvetica Neue", Helvetica, sans-serif;
+
+html {
+  font-size: 62.5%;
+  color: $primary-text-color;
+}
+
+body {
+  font-size: 2.4em;
+  font-family: $sans-serif-main;
+  color: #555;
+  background: $body-bg;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-link-color;
+}
+
+h1, h2, h3, h4, .subheading {
+  font-family: $sans-serif-main;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.5rem;
+  padding: 20px 0 10px 0;
+}
+
+h2 {
+  font-size: 3.5rem;
+  padding: 20px 0 10px 0;
+}
+
+h3 {
+  font-size: 3rem;
+  padding: 20px 0 10px 0;
+}
+
+h4 {
+  font-size: 2.7rem;
+  padding: 20px 0 10px 0;
+}
+
+.subheading {
+  font-size: 2.2rem;
+}
+
+h1 + .subheading {
+  margin-top: -10px;
+  padding-bottom: 10px;
+  display: block;
+}
+
+p {
+  line-height: 1.4;
+  padding: 10px 0;
+}
+
+.navigation a {
+  color: $primary-nav-color;
+}
+
+ol, ul {
+  margin-left: 60px;
+  li {
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+    line-height: 1.4;
+  }
+}
+
+blockquote {
+  margin-right: 30px;
+  background: darken($body-bg, 10%);
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 1.3;
+  padding: 20px;
+  border-left: 10px solid $secondarycolor;
+}
+
+#main-nav {
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  a:hover {
+    color: darken($primary-nav-color, 5%);
+  }
+}

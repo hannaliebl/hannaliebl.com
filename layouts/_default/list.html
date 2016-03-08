@@ -1,0 +1,54 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+<div class="container page-body">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <ul class="structure-list">
+          {{ range $index, .Paginator.Pages }}
+            {{ .Render "li" }}
+          {{ end }}
+        </ul>
+        <nav>
+          <ul class="pagination">
+            {{ if .Paginator.HasPrev }}
+              <li>
+                <a href="{{ .Paginator.First.URL }}" aria-label="First">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ .Paginator.Prev.URL }}" aria-label="Next">
+                  <span aria-hidden="true">{{ .Paginator.Prev.PageNumber }}</span>
+                </a>
+              </li>
+            {{ end }}
+            <li class="active"><a href="#">{{ .Paginator.PageNumber }}<span class="sr-only">(current)</span></a></li>
+            {{ if .Paginator.HasNext }}
+            <li>
+              <a href="{{ .Paginator.Next.URL }}" aria-label="Next">
+                <span aria-hidden="true">{{ .Paginator.Next.PageNumber }}</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ .Paginator.Last.URL }}" aria-label="Last">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </nav>
+      </div>
+      <div class="col-4 sidebar">
+        <aside>
+          {{ partial "blog-sidebar.html" . }}
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}

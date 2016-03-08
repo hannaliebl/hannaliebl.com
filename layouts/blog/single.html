@@ -1,0 +1,35 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+<div class="container720 page-body">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{ .Title }}</h1>
+      <span class="post-date h4">Published {{ .Date.Format "Jan 2, 2006" }}</span>
+      <span class="demi-word">in</span>
+      {{ range .Params.categories }}
+        <a href="/categories/{{ . | urlize }}"><span class="h4">{{ . }}</span></a>
+      {{ end }}
+      <span class="demi-word">tags:</span>
+      {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+      {{ end }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      {{ .Content }}
+
+      {{ if .Prev }}
+        <div class="pull-left">
+          <a href="{{.Prev.Permalink}}"></span> {{.Prev.Title}}</a>
+        </div>
+      {{ end }}
+      {{ if .Next }}
+        <div class="pull-right">
+          <a class="text-right" href="{{.Next.Permalink}}">{{.Next.Title}}</a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}
