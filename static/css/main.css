@@ -159,7 +159,8 @@ input, select {
   background: #6DC9AE; }
 
 .page-body {
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .navigation ul {
   list-style-type: none;
@@ -255,21 +256,50 @@ ul.structure-list {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
   /* IE6-9 */ }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.inline-image {
+  margin: 15px; }
+  .inline-image.mod-top-aligned {
+    margin-top: 10px; }
+
+@media (max-width: 768px) {
+  .inline-image {
+    max-width: 50%;
+    margin: 15px 5px 5px 5px; } }
+
+.caption-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+.inline-image-caption {
+  font-size: 1.5rem;
+  padding: 5px 0; }
+
+.p-spacing {
+  line-height: 1.4;
+  padding: 10px 0; }
+
 .page-footer {
   padding: 20px 0 15px 0;
   color: #fff;
-  background: #6DC9AE; }
-  .page-footer p {
-    font-weight: 200; }
-  .page-footer a {
-    border-bottom: 2px solid #fff; }
+  background: #6DC9AE;
+  font-size: 1.8rem; }
+  .page-footer h3 {
+    font-weight: 400; }
+  .page-footer .inline-list {
+    padding-right: 15px; }
 
 html {
   font-size: 62.5%;
   color: #444; }
 
 body {
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   color: #555;
   background: #fff;
@@ -279,20 +309,30 @@ a {
   text-decoration: none;
   color: #338772; }
 
+p > a {
+  font-weight: 400;
+  border-bottom: 1px solid; }
+  p > a:hover {
+    transition: 400ms all;
+    border-bottom: 1px solid #FF8D10; }
+
+p > strong {
+  font-weight: 400; }
+
 h1, h2, h3, h4, .subheading {
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 700; }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   padding: 20px 0 10px 0; }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   padding: 20px 0 10px 0; }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   padding: 20px 0 10px 0; }
 
 h4 {
@@ -373,8 +413,16 @@ blockquote {
 .article-body {
   margin-top: 16px; }
 
-.divider {
-  border-color: #919191; }
+.article-preview {
+  margin-bottom: 30px; }
+
+.read-more {
+  font-weight: 400;
+  font-size: 2rem; }
+
+code {
+  background: #f2f2f2;
+  padding: 3px 2px; }
 
 .article-preview:last-child hr.divider {
   opacity: 0; }

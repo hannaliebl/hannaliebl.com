@@ -15,6 +15,7 @@ pre[class*="language-"] {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
+	font-size: 1.4rem;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -28,15 +29,20 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
+	padding: 0;
+	margin: 10px 0;
 	overflow: auto;
-	border-radius: 0.3em;
+	border-radius: 0.3rem;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background: #272822;
+}
+
+pre > code[class*="language-"] {
+	background: #272822;
+	padding: 0;
 }
 
 /* Inline code */
@@ -112,4 +118,3 @@ color: #66d9ef;
 .token.entity {
 	cursor: help;
 }
-

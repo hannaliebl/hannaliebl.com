@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-size: 2.4em;
+  font-size: 2.2em;
   font-family: $sans-serif-main;
   color: #555;
   background: $body-bg;
@@ -21,23 +21,36 @@ a {
   color: $primary-link-color;
 }
 
+p > a {
+  font-weight: 400;
+  border-bottom: 1px solid;
+  &:hover {
+    transition: 400ms all;
+    border-bottom: 1px solid $highlight-color;
+  }
+}
+
+p > strong {
+  font-weight: 400;
+}
+
 h1, h2, h3, h4, .subheading {
   font-family: $sans-serif-main;
   font-weight: 700;
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   padding: 20px 0 10px 0;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   padding: 20px 0 10px 0;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   padding: 20px 0 10px 0;
 }
 

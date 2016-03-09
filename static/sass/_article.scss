@@ -42,8 +42,19 @@
   margin-top: 16px;
 }
 
-.divider {
-  border-color: lighten($primary-text-color, 30%);
+.article-preview {
+  margin-bottom: 30px;
+}
+
+.read-more {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+code {
+  background: darken(#fff, 5%);
+  padding: 3px 2px;
+  // margin: 5px 0;
 }
 
 .article-preview:last-child hr.divider {
