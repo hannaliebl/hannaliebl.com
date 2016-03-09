@@ -6,7 +6,7 @@ categories = ["Wordpress"]
 tags = ["Plugins", "Wordpress"]
 featured = ["false"]
 +++
-I began working with WordPress about 11 months ago. It seems like a lot longer than that, honestly, given what I’ve learned about the content management system in that period of time. One of WordPress’ best features is the ability to easily install and use plugins to increase functionality and extensibility so that site admins can do more advanced tasks without having to delve into the backend.
+I began working with WordPress about 11 months ago. It seems like a lot longer than that, honestly, given what I’ve learned about the content management system in that period of time. One of WordPress’ best features is the ability to easily install and use plugins to increase functionality and extensibility so that site admins can do more advanced tasks without having to delve into the backend.<!--more-->
 
 In celebration of my almost one-year anniversary of using WordPress, I thought I’d go over the top five free plugins I’ve found and used so far:
 
