@@ -1,7 +1,11 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
 <div class="container page-body">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <div class="row">
+    <div class="col-12">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </div>
+  </div>
 </div>
 {{ partial "footer.html" . }}
