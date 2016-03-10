@@ -1,0 +1,31 @@
+$body-bg: #fff;
+$primary-page-color: #6DC9AE;
+$content-box: lighten(#9CEAEF, 10%);
+
+$primary-text-color: #444;
+$secondary-text-color: #068D9D;
+$primary-link-color: #338772;
+$primary-nav-color: #fff;
+$highlight-color: #FF8D10;
+$post-meta: lighten($primary-text-color, 30%);
+$post-meta-link: #07BEB8;
+$page-footer-color: #fff;
+
+$sans-serif-main:"Lato", "Helvetica Neue", Helvetica, sans-serif;
+$sans-serif-secondary:'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+
+$default-transition: all .5s;
+
+@mixin vertical-heading-rhythm() {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@mixin vertical-text-rhythm() {
+  padding-bottom: 20px;
+}
+
+@mixin vertical-page-element-rhythm() {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

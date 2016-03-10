@@ -4,21 +4,20 @@
   <div class="row">
     <div class="col-12">
       <h1>{{ .Title }}</h1>
-      <span class="post-date h4">Published {{ .Date.Format "Jan 2, 2006" }}</span>
-      <span class="demi-word">in</span>
-      {{ range .Params.categories }}
-        <a href="/categories/{{ . | urlize }}"><span class="h4">{{ . }}</span></a>
-      {{ end }}
-      <span class="demi-word">tags:</span>
-      {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
-      {{ end }}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      {{ .Content }}
-
+      <div class="post-meta">
+        <span class="date-posted">{{ .Date.Format "Jan. 1, 2006" }} // </span>
+        <span class="demi-word">POSTED IN:</span>
+        {{ range .Params.categories }}
+          <a href="/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
+        {{ end }}
+        <span class="demi-word">TAGS:</span>
+        {{ range .Params.tags }}
+          <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+        {{ end }}
+      </div>
+      <article class="post-body">
+        {{ .Content }}
+      </article>
       {{ if .Prev }}
         <div class="pull-left">
           <a href="{{.Prev.Permalink}}"></span> {{.Prev.Title}}</a>

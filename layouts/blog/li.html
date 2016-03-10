@@ -1,19 +1,18 @@
 <li>
   <article class="article-preview">
-      <a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">
-        <h2><span class="date float">{{ .Date.Format "01-02-06" }}</span>{{ .Title }}</h2>
-      </a>
+    <h2 class="post-title"><a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">{{ .Title }}</a></h2>
     <div class="post-meta">
-      <span class="demi-word">Posted in:</span>
+      <span class="date-posted">{{ .Date.Format "Jan. 1, 2006" }} // </span>
+      <span class="demi-word">POSTED IN:</span>
       {{ range .Params.categories }}
         <a href="/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
       {{ end }}
-      <span class="demi-word">Tagged:</span>
+      <span class="demi-word">TAGS:</span>
       {{ range .Params.tags }}
         <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
       {{ end }}
     </div>
     <div class="article-body">{{ .Summary }}</div>
-    {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">Read More <i class="fa fa-arrow-circle-right"></i>{{ end }}</a>
+    {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">READ MORE <i class="fa fa-arrow-circle-right"></i>{{ end }}</a>
   </article>
 </li>

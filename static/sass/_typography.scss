@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-family: $sans-serif-main;
   color: #555;
   background: $body-bg;
@@ -21,11 +21,19 @@ a {
   color: $primary-link-color;
 }
 
+p {
+  line-height: 1.4;
+  @include vertical-text-rhythm()
+}
+ p:last-child {
+   padding-bottom: 0;
+ }
+
 p > a {
   font-weight: 400;
   border-bottom: 1px solid;
   &:hover {
-    transition: 400ms all;
+    transition: $default-transition;
     border-bottom: 1px solid $highlight-color;
   }
 }
@@ -34,52 +42,52 @@ p > strong {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, .subheading {
+h1, h2, h3, h4 {
   font-family: $sans-serif-main;
   font-weight: 700;
+  @include vertical-heading-rhythm()
+  line-height: 1.2;
 }
 
 h1 {
   font-size: 4.2rem;
-  padding: 20px 0 10px 0;
 }
 
 h2 {
   font-size: 3.2rem;
-  padding: 20px 0 10px 0;
 }
 
 h3 {
   font-size: 2.2rem;
-  padding: 20px 0 10px 0;
 }
 
 h4 {
   font-size: 2.7rem;
-  padding: 20px 0 10px 0;
 }
 
-.subheading {
+.post-body h1 {
+  font-size: 3rem;
+}
+
+.post-body h2 {
+  font-size: 2.8rem;
+}
+
+.post-body h3 {
+  font-size: 2.4rem;
+}
+
+.post-body h4 {
   font-size: 2.2rem;
 }
 
-h1 + .subheading {
-  margin-top: -10px;
-  padding-bottom: 10px;
-  display: block;
-}
-
-p {
-  line-height: 1.4;
-  padding: 10px 0;
-}
-
-.navigation a {
+.top-level-navigation a {
   color: $primary-nav-color;
 }
 
 ol, ul {
   margin-left: 60px;
+  @include vertical-text-rhythm()
   li {
     margin-bottom: 7.5px;
     margin-top: 7.5px;
@@ -88,20 +96,11 @@ ol, ul {
 }
 
 blockquote {
-  margin-right: 30px;
-  background: darken($body-bg, 10%);
+  @include vertical-text-rhythm()
+  background: $content-box;
   font-style: italic;
-  font-size: 2.6rem;
-  line-height: 1.3;
-  padding: 20px;
-  border-left: 10px solid $secondarycolor;
-}
-
-#main-nav {
-  font-family: "Noto Sans", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
-  a:hover {
-    color: darken($primary-nav-color, 5%);
-  }
+  font-size: 2.4rem;
+  line-height: 1.4;
+  padding: 20px 20px 10px 20px;
+  border-left: 10px solid $secondary-text-color;
 }
