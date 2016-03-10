@@ -11,7 +11,7 @@ title = "About"
   </div>
 </div>
 
-I've been a developer since 2012, when I started making Wordpress sites. I currently work in Portland, Oregon on a SaaS web application, writing JavaScript, designing UIs, and doing some backend work in Go. I try to keep up with the ever-changing web development world. Technologies, frameworks, and tools I have experience with include: **Angular**, **Backbone**, **Node**, **D3**, **Rails**, **SASS/LESS**, **Gulp**, **Grunt**, **Git**, and **various design programs**, with a strong preference for Adobe Illustrator. Right now, I'm focusing on improving my Go programming skills, and I am excited about the growing, friendly community around that language.
+I've been a developer since 2012, when I started making Wordpress sites. I currently work in Portland, Oregon on a [SaaS web application](https://radarfirst.com/), writing JavaScript, designing UIs, and doing some backend work in Go. I try to keep up with the ever-changing web development world. Technologies, frameworks, and tools I have experience with include: **Angular**, **Backbone**, **Node**, **D3**, **Rails**, **SASS/LESS**, **Gulp**, **Grunt**, **Git**, and **various design programs**, with a strong preference for Adobe Illustrator. Right now, I'm focusing on improving my Go programming skills, and I am excited about the growing, friendly community around that language.
 
 Outside of programming, I enjoy exploring Portland, playing computer games with friends, weightlifting, and fostering cats for the Oregon Humane Society.
 

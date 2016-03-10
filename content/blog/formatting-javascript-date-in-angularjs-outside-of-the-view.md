@@ -28,7 +28,7 @@ But if you need, say, last week’s date, then do:
   </code>
 </pre>
 
-This will return a date in this format: Wed Apr 30 2014 16:33:22 GMT-0700 (PDT)
+This will return a date in this format: `Wed Apr 30 2014 16:33:22 GMT-0700 (PDT)`
 
 Now, to convert this date into whatever format we need (inside an Angular app!), enter $filter. First, because we are not working in the view, but in a service or controller or other part of the app, you have to inject $filter into wherever you are calling it, much like you inject other Angular services like $http or $scope. In this case, I was calling $filter in a custom service, so you just enter it where you do other injections, for example:
 
@@ -47,10 +47,6 @@ Now, it’s as simple as following the way the date filter$ is documented in the
   </code>
 </pre>
 
-Of course, here is where you can customize the output as you please, using the API doc linked to above. The example above would output:
-
-~~~
-2014-04-30
-~~~
+Of course, here is where you can customize the output as you please, using the API doc linked to above. The example above would output: `2014-04-30`
 
 And it’s as easy as that to get a date into an exact format required by an API or anything else in your application.
