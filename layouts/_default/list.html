@@ -18,7 +18,7 @@
             {{ if .Paginator.HasPrev }}
               <li>
                 <a href="{{ .Paginator.First.URL }}" aria-label="First">
-                  <span aria-hidden="true">&laquo;</span>
+                  <span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
                 </a>
               </li>
               <li>
@@ -27,7 +27,7 @@
                 </a>
               </li>
             {{ end }}
-            <li class="active"><a href="#">{{ .Paginator.PageNumber }}<span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">{{ .Paginator.PageNumber }}</a></li>
             {{ if .Paginator.HasNext }}
             <li>
               <a href="{{ .Paginator.Next.URL }}" aria-label="Next">
@@ -36,7 +36,7 @@
             </li>
             <li>
               <a href="{{ .Paginator.Last.URL }}" aria-label="Last">
-                <span aria-hidden="true">&raquo;</span>
+                <span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
               </a>
             </li>
             {{ end }}

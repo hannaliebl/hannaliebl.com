@@ -387,7 +387,8 @@ blockquote {
 .post-meta {
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300;
-  color: #919191; }
+  color: #919191;
+  padding-bottom: 10px; }
 
 .demi-word {
   display: inline-block;
@@ -402,36 +403,41 @@ blockquote {
   border: 2px solid #07BEB8;
   color: #07BEB8; }
   .post-tag:hover, .post-category:hover {
+    transition: all 0.5s;
     border: 2px solid #FF8D10; }
 
 .article-preview {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 
 .post-body {
-  padding-bottom: 15px; }
+  padding-bottom: 20px; }
 
 .read-more {
   font-size: 2rem;
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
-  color: #07BEB8; }
+  color: #07BEB8;
+  display: inline-block;
+  padding-top: 10px; }
   .read-more:hover {
+    transition: all 0.5s;
     color: #FF8D10; }
 
 code {
   background: #f2f2f2;
   padding: 3px 2px; }
 
-.article-preview:last-child hr.divider {
-  opacity: 0; }
+ul.pagination {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0; }
+  ul.pagination li.active a {
+    color: #fff;
+    background: #338772; }
 
-.pagination > li > a, .pagination > li > span {
+ul.pagination > li > a, .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
-  margin-left: -1px;
-  line-height: 1.42857143;
+  padding: 2px 12px;
   color: #338772;
   text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #ddd; }
+  background-color: #fff; }

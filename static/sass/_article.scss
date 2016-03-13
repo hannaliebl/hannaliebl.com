@@ -18,6 +18,7 @@
   font-family: $sans-serif-secondary;
   font-weight: 300;
   color: $post-meta;
+  padding-bottom: 10px;
 }
 
 .demi-word {
@@ -34,26 +35,29 @@
   border: 2px solid $post-meta-link;
   color: $post-meta-link;
   &:hover {
+    transition: $default-transition;
     border: 2px solid $highlight-color;
   }
 }
 
 .article-preview {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 // entire post, single page view
 .post-body {
-  padding-bottom: 15px;
+  @include vertical-text-rhythm()
 }
 
 .read-more {
-  // font-weight: 400;
   font-size: 2rem;
   font-family: $sans-serif-secondary;
   font-weight: 500;
   color: $post-meta-link;
+  display: inline-block;
+  padding-top: 10px;
   &:hover {
+    transition: $default-transition;
     color: $highlight-color;
   }
 }
@@ -61,26 +65,22 @@
 code {
   background: darken(#fff, 5%);
   padding: 3px 2px;
-  // margin: 5px 0;
 }
 
-.article-preview:last-child hr.divider {
-  opacity: 0;
+ul.pagination {
+  font-family:$sans-serif-secondary;
+  margin: 0;
+ li.active a {
+   color: #fff;
+   background: $primary-link-color;
+ }
 }
 
-// .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-//     background-color: $footerColor;
-//     border-color: $footerColor;
-// }
-
-.pagination > li > a, .pagination > li > span {
+ul.pagination > li > a, .pagination > li > span {
     position: relative;
     float: left;
-    padding: 6px 12px;
-    margin-left: -1px;
-    line-height: 1.42857143;
+    padding: 2px 12px;
     color: $primary-link-color;
     text-decoration: none;
     background-color: #fff;
-    border: 1px solid #ddd;
 }
