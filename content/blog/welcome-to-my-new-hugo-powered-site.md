@@ -2,7 +2,8 @@
 categories = ["Web Design"]
 date = "2016-03-08T12:04:58-08:00"
 draft = false
-featured = ["false"]
+featured = ["true"]
+featured_img = "/img/hugo-thumbnail.jpeg"
 tags = ["Hugo", "Web Design"]
 title = "Welcome to My New Hugo-Powered Site"
 

@@ -110,8 +110,10 @@ ul.structure-list {
   .post-tag {
     background: transparent;
     border: 2px solid #fff;
+    color: #fff;
     &:hover {
-      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
     }
   }
 }
