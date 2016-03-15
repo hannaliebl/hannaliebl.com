@@ -1,0 +1,15 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+<div class="container960 page-body">
+  <div class="row">
+    <div class="col-12">
+      <h1>Work</h1>
+    </div>
+  </div>
+  <div class="row">
+    {{ range $index, .Paginator.Pages }}
+      {{ .Render "li" }}
+    {{ end }}
+  </div>
+</div>
+{{ partial "footer.html" . }}

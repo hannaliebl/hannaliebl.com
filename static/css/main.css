@@ -370,6 +370,9 @@ blockquote {
   margin-bottom: 20px;
   border-left: 10px solid #068D9D; }
 
+.text-center {
+  text-align: center; }
+
 .post-title {
   margin: 0;
   padding: 10px 0; }
