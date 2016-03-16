@@ -17,8 +17,8 @@
   </div>
   <div class="row">
     {{ $featuredPosts := .Site.Taxonomies.featured.true }}
-    {{ range first 3 $featuredPosts.Pages }}
-      <div class="col-4">
+    {{ range first 4 $featuredPosts.Pages }}
+      <div class="col-6">
         <a href="{{ .Permalink}}">
           <div class="featured-container" style="background-image: url({{ .Params.featured_img }});">
             <div class="gradient-overlay">

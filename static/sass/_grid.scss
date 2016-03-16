@@ -2,20 +2,8 @@
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-}
-
-.container960 {
-  width:100%;
-  max-width: 960px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.container720 {
-  width:100%;
-  max-width: 720px;
-  padding: 0 15px;
-  margin: 0 auto;
+  max-width: 850px;
+  width: 100%;
 }
 
 .row {
@@ -29,48 +17,15 @@
   padding-right: 15px;
 }
 
-.clearfix:before, .container:before, .container960:before, .container720:before, .row:before {
+.clearfix:before, .container:before, .row:before {
   display: table;
   content: " ";
 }
 
-.clearfix:after, .container:after, .container960:after, .container720:after, .row:after {
+.clearfix:after, .container:after, .row:after {
   clear:both;
   display: table;
   content: " ";
-}
-
-// thanks, bootstrap :P
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-@media only screen
-and (min-width : 720px) {
-  .container720 {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-}
-
-@media only screen
-and (min-width : 960px) {
-  .container960 {
-    max-width: 960px;
-    margin: 0 auto;
-  }
 }
 
 @media only screen

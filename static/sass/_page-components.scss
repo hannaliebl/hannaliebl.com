@@ -103,6 +103,7 @@ ul.structure-list {
   h1 {
     font-size: 22px;
     font-weight: 600;
+    text-shadow: 1px 1px 1px #000;
   }
   &:hover {
     opacity: 0.8;
@@ -111,6 +112,7 @@ ul.structure-list {
     background: transparent;
     border: 2px solid #fff;
     color: #fff;
+    text-shadow: 1px 1px 1px #000;
     &:hover {
       color: #fff;
       border: 2px solid #fff;
@@ -119,9 +121,9 @@ ul.structure-list {
 }
 
 .gradient-overlay {
-  background: -webkit-linear-gradient(rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-  background: -o-linear-gradient(rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-  background: linear-gradient(rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -webkit-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
@@ -165,6 +167,20 @@ ul.structure-list {
   padding: 10px 0;
 }
 
+.work-row {
+  @include vertical-text-rhythm()
+  h2 {
+    // font-size: 2.8rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.work-heading-img-section {
+  height: 240px;
+  background-size: cover;
+}
+
 .page-footer {
   padding: 20px 0 15px 0;
   color: $page-footer-color;
@@ -173,6 +189,6 @@ ul.structure-list {
     font-weight: 400;
   }
   .inline-list {
-    padding-right: 15px;
+    padding-right: 10px;
   }
 }
