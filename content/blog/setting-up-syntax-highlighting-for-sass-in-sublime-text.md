@@ -5,8 +5,9 @@ title = "Setting Up Syntax Highlighting for SASS in Sublime Text"
 categories = ["Web Development"]
 tags = ["Guide", "SASS", "Sublime Text"]
 featured = ["false"]
+summary = "A guide to getting SASS syntax highlighting to work in Sublime Text."
 +++
-**UPDATE (4/13/15):** A commenter pointed out that, indeed, there are separate plugins for SCSS syntax highlighting/auto completion and SASS highlighting/auto completion, so, install the one that is best for you. If you use full-on SASS (so no curly braces, .sass files) then use the SASS one, if you write to .scss files, use the SCSS one. By the way, this is a good post about the differences between SASS and SCSS.<!--more-->
+**UPDATE (4/13/15):** A commenter pointed out that, indeed, there are separate plugins for SCSS syntax highlighting/auto completion and SASS highlighting/auto completion, so, install the one that is best for you. If you use full-on SASS (so no curly braces, .sass files) then use the SASS one, if you write to .scss files, use the SCSS one. By the way, this is a good post about the differences between SASS and SCSS.
 
 Recently, I’ve been using SASS (the great acronym stands for Syntactically Awesome Stylesheets) for projects. SASS is awesome. It’s powerful and has changed the way I think about writing and organizing CSS. It adds functionality like variables, nesting, and mixins to writing CSS. It’s a preprocessor; basically, you write in SASS, using its logical structures and easy syntax, and then it outputs to plain old CSS. It also integrates with Compass, a powerful CSS framework which I have just barely scratched the surface of.
 

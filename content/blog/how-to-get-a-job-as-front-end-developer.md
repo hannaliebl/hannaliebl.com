@@ -5,9 +5,10 @@ draft = false
 featured = ["false"]
 tags = ["Guide", "Career Advice"]
 title = "How to Get a Job as a Front End Developer"
+summary = "The story of how I became a developer, and what I think is important for others trying to break into the field."
 
 +++
-I have had a couple people ask me recently about how to do a career change into web design and development since I recently switched over from doing some freelance work on the side to a full time job as a junior front end developer. After giving out advice in rambling emails and Gchat messages, I thought it might be better to organize and condense my thoughts down into a hopefully helpful blog post.<!--more-->
+I have had a couple people ask me recently about how to do a career change into web design and development since I recently switched over from doing some freelance work on the side to a full time job as a junior front end developer. After giving out advice in rambling emails and Gchat messages, I thought it might be better to organize and condense my thoughts down into a hopefully helpful blog post.
 
 First, there is always confusion on job titles. A front end developer can mean different things to different people and companies. At one company a front end developer can be a very technical role, working heavily with client side JavaScript frameworks and doing very little design and thinking about user experience, whereas at another company all you need to know is some basic jQuery DOM manipulation and you will be expected to do a lot of the styling and user experience work and planning.
 

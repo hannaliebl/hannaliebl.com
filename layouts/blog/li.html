@@ -12,7 +12,7 @@
         <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
       {{ end }}
     </div>
-    <div class="article-body">{{ .Summary }}</div>
-    {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">READ MORE <i class="fa fa-arrow-circle-right"></i>{{ end }}</a>
+    <div class="article-body"><p>{{ .Params.summary }}</p></div>
+    <a class="read-more" href="{{ .Permalink }}">READ MORE <i class="fa fa-arrow-circle-right"></i></a>
   </article>
 </li>

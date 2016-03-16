@@ -8,4 +8,5 @@ featured = ["false"]
 featured_img = ""
 thumbnail = ""
 summary = ""
+site_link = ""
 +++

@@ -5,7 +5,7 @@ title = "Hanna Liebl's Site: Web Development Writing and Projects"
 description = ""
 pluralizelisttitles = false
 preserveTaxonomyNames = true
-paginate = 3
+paginate = 5
 
 [author]
   name = "Hanna Liebl"

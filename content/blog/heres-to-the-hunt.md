@@ -4,10 +4,11 @@ date = "2014-02-11T18:23:04-08:00"
 draft = false
 featured = ["false"]
 tags = ["Guide", "PostgresSQL", "Rails"]
-title = "Here’s to the Hunt (Also, Remember Postgress.app’s Version Name When Changing your PATH)"
+title = "Here’s to the Hunt (Also, Remember Postgres.app’s Version Name When Changing your PATH)"
+summary = "A Postgres problem, how I fixed it, and why this is what coding is all about."
 
 +++
-If you’ve done anything with web development (or coding in general), you’ve probably run into a problem that starts with this thought, “oh, [feature X] seems cool, let me go check the documentation and install [feature X], it can’t be that hard…” and then reemerge, hours and many tabs later, to have found the problem you were trying to solve or feature you wanted to add needed about 10 additional steps to make work.<!--more-->
+If you’ve done anything with web development (or coding in general), you’ve probably run into a problem that starts with this thought, “oh, [feature X] seems cool, let me go check the documentation and install [feature X], it can’t be that hard…” and then reemerge, hours and many tabs later, to have found the problem you were trying to solve or feature you wanted to add needed about 10 additional steps to make work.
 
 This happened to me a few nights ago. I was going through Michael Hartl’s Rails Tutorial, and at the end of Chapter 3, I thought it would be fun to install Heroku’s Postgres.app to better align my Rails development database with Heroku’s production database. The installation instructions were simple. The problem happened because OS X is installed with another version of postgres, and you had to update your PATH to include the location in /Applications of the Postgres.app in order to use that app and not the default OS X version. I edited my bash profile to include the link given in the documentation:  
 

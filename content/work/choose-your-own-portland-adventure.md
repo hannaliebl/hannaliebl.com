@@ -8,6 +8,6 @@ thumbnail = "/img/work/choose-your-own-adventure-portland.jpg"
 tags = ["JavaScript", "Backbone", "Design"]
 title = "Choose Your Own Portland Adventure"
 summary = "A Backbone application using the Yelp API to help users find interesting things to do in Portland, Oregon."
-
+site_link = "http://portland-adventure.herokuapp.com/"
 +++
 Oh, indeed

@@ -5,4 +5,5 @@ title = ""
 categories = [""]
 tags = [""]
 featured = ["false"]
+summary = ""
 +++
