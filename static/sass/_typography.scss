@@ -68,6 +68,30 @@ h4 {
 .small {
   font-size: 1.8rem;
 }
+.page-intro {
+  color: #fff;
+}
+
+.page-intro-heading {
+  font-family: $sans-serif-secondary;
+  font-size: 6.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.page-intro-subheading {
+  font-family: $sans-serif-secondary;
+  font-weight: 200;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.page-intro-text {
+  padding-top: 20px;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
 
 .post-body h1 {
   font-size: 3rem;

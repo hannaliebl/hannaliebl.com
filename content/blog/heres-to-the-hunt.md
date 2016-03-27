@@ -13,13 +13,17 @@ If you’ve done anything with web development (or coding in general), you’ve 
 This happened to me a few nights ago. I was going through Michael Hartl’s Rails Tutorial, and at the end of Chapter 3, I thought it would be fun to install Heroku’s Postgres.app to better align my Rails development database with Heroku’s production database. The installation instructions were simple. The problem happened because OS X is installed with another version of postgres, and you had to update your PATH to include the location in /Applications of the Postgres.app in order to use that app and not the default OS X version. I edited my bash profile to include the link given in the documentation:  
 
 <pre class="language-bash">
-PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+  <code class="language-bash">
+    PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+  </code>
 </pre>
 
 But, little did I know this was actually wrong, and in later versions of Postgres.app the application is named along with the version number. Here’s the right address to add to your PATH, as of this version of postgres.app:
 
 <pre class="language-bash">
-PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
+  <code class="language-bash">
+    PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
+  </code>
 </pre>
 
 So the Googling began. Some people ran into problems with psql installations with Homebrew, which didn’t apply to me. Others had other more obscure problems with their PATH, which also didn’t apply to me.
