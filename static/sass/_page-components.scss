@@ -64,7 +64,7 @@ ul.structure-list {
     }
   }
   .content-box {
-    margin-bottom: 30px;
+    @include row-spacing()
     background: $content-box;
   }
 }
@@ -87,10 +87,17 @@ ul.structure-list {
   padding: 15px;
 }
 
+.page-intro {
+  padding: 90px 40px;
+  @include row-spacing()
+}
+
 .featured-container {
   height: 250px;
   width: 100%;
   color: #fff;
+  @include row-spacing()
+  @include img-depth()
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -131,6 +138,7 @@ ul.structure-list {
   max-width: 100%;
   height: auto;
   display: block;
+  @include img-depth()
 }
 
 .inline-image {
@@ -168,17 +176,12 @@ ul.structure-list {
 }
 
 .work-row {
-  @include vertical-text-rhythm()
+  @include row-spacing()
   h2 {
     // font-size: 2.8rem;
     padding: 0;
     margin: 0;
   }
-}
-
-.work-heading-img-section {
-  height: 240px;
-  background-size: cover;
 }
 
 .page-footer {

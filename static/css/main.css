@@ -183,10 +183,18 @@ ul.structure-list {
 .well {
   padding: 15px; }
 
+.page-intro {
+  padding: 90px 40px;
+  margin-bottom: 30px; }
+
 .featured-container {
   height: 250px;
   width: 100%;
   color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -mox-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -222,7 +230,10 @@ ul.structure-list {
 .img-responsive {
   max-width: 100%;
   height: auto;
-  display: block; }
+  display: block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -mox-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
 
 .inline-image {
   margin: 15px; }
@@ -251,14 +262,10 @@ ul.structure-list {
   padding: 10px 0; }
 
 .work-row {
-  padding-bottom: 20px; }
+  margin-bottom: 30px; }
   .work-row h2 {
     padding: 0;
     margin: 0; }
-
-.work-heading-img-section {
-  height: 240px;
-  background-size: cover; }
 
 .page-footer {
   padding: 20px 0 15px 0;
@@ -323,6 +330,27 @@ h4 {
 .small {
   font-size: 1.8rem; }
 
+.page-intro {
+  color: #fff; }
+
+.page-intro-heading {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 6.7rem;
+  margin: 0;
+  padding: 0; }
+
+.page-intro-subheading {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0; }
+
+.page-intro-text {
+  padding-top: 20px;
+  font-size: 3.5rem;
+  font-weight: 400; }
+
 .post-body h1 {
   font-size: 3rem; }
 
@@ -354,6 +382,9 @@ blockquote {
   padding: 20px;
   margin-bottom: 20px;
   border-left: 10px solid #068D9D; }
+
+.text-right {
+  text-align: right; }
 
 .text-center {
   text-align: center; }
@@ -406,7 +437,8 @@ blockquote {
   font-weight: 500;
   color: #07BEB8;
   display: inline-block;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin-right: 20px; }
   .read-more:hover {
     transition: all 0.5s;
     color: #FF8D10; }
@@ -414,6 +446,14 @@ blockquote {
 code {
   background: #f2f2f2;
   padding: 3px 2px; }
+
+.label-control {
+  display: inline-block;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+  background: #338772;
+  color: #fff;
+  padding: 2px 5px;
+  margin: 4px 0; }
 
 ul.pagination {
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;

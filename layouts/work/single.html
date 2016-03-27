@@ -18,20 +18,16 @@
       <article class="post-body">
         {{ .Content }}
       </article>
-      <div class="row">
-        <div class="col-6">
-          {{ if .PrevInSection }}
-            <a class="small" href="{{.PrevInSection.Permalink}}"><span class="small label-control"><i class="fa fa-angle-left"></i> Previous</span>
-            <div>{{.PrevInSection.Title}}</div></a>
-          {{ end }}
+      {{ if .PrevInSection }}
+        <div class="pull-left">
+          <a href="{{.PrevInSection.Permalink}}"></span> {{.PrevInSection.Title}}</a>
         </div>
-        <div class="col-6 text-right">
-          {{ if .NextInSection }}
-            <a class="small" href="{{.NextInSection.Permalink}}"><span class="small label-control">Next <i class="fa fa-angle-right"></i></span>
-            <div>{{.NextInSection.Title}}</div></a>
-          {{ end }}
+      {{ end }}
+      {{ if .NextInSection }}
+        <div class="pull-right">
+          <a class="text-right" href="{{.NextInSection.Permalink}}">{{.NextInSection.Title}}</a>
         </div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </div>

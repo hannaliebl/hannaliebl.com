@@ -16,6 +16,12 @@ $sans-serif-secondary:'Roboto', "Helvetica Neue", Helvetica, sans-serif;
 
 $default-transition: all .5s;
 
+@mixin img-depth() {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  -mox-box-shadow:0 1px 2px rgba(0,0,0,0.4);
+}
+
 @mixin vertical-heading-rhythm() {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -23,6 +29,10 @@ $default-transition: all .5s;
 
 @mixin vertical-text-rhythm() {
   padding-bottom: 20px;
+}
+
+@mixin row-spacing() {
+  margin-bottom: 30px;
 }
 
 @mixin vertical-page-element-rhythm() {
