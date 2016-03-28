@@ -7,7 +7,7 @@ featured_img = ""
 site_link = "http://www.sandramathern.com/"
 summary = "Front end design for a dance professor's personal portfolio site."
 tags = ["Design", "Wordpress"]
-thumbnail = "/img/work/sandra-mathern-dance-c.png"
+thumbnail = "/img/work/sandra-mathern-dance-big.png"
 title = "Sandra Mathern Dance"
 
 +++
