@@ -75,15 +75,11 @@ code {
   color: #fff;
   padding: 2px 5px;
   margin: 4px 0;
-}
-
-ul.pagination {
-  font-family:$sans-serif-secondary;
-  margin: 0;
- li.active a {
-   color: #fff;
-   background: $primary-link-color;
- }
+  &:hover {
+    transition: $default-transition;
+    background: $highlight-color;
+    color: #fff;
+  }
 }
 
 ul.pagination > li > a, .pagination > li > span {
@@ -93,4 +89,18 @@ ul.pagination > li > a, .pagination > li > span {
     color: $primary-link-color;
     text-decoration: none;
     background-color: #fff;
+    &:hover {
+      transition: $default-transition;
+      background: $highlight-color;
+      color: #fff;
+    }
+}
+
+ul.pagination {
+  font-family:$sans-serif-secondary;
+  margin: 0;
+ li.active a, li.active:hover {
+   color: #fff;
+   background: $primary-link-color;
+ }
 }

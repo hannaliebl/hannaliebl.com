@@ -134,42 +134,6 @@ ul.structure-list {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  @include img-depth()
-}
-
-.inline-image {
-  margin: 15px;
-  &.mod-top-aligned {
-    margin-top: 10px;
-  }
-}
-
-.block-image {
-  margin: 10px 0;
-}
-
-@media (max-width: 768px) {
-  .inline-image {
-    max-width: 50%;
-    margin: 15px 5px 5px 5px;
-  }
-}
-
-.caption-container {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.inline-image-caption {
-  font-size: 1.5rem;
-  padding: 5px 0;
-}
-
 .p-spacing {
   line-height: 1.4;
   padding: 10px 0;

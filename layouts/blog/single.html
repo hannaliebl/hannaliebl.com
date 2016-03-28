@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 {{ partial "nav.html" . }}
-<div class="container page-body">
+<div class="container page-body text-center">
   <div class="row">
     <div class="col-12">
       <h1>{{ .Title }}</h1>
@@ -15,21 +15,29 @@
           <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
         {{ end }}
       </div>
+    </div>
+  </div>
+</div>
+<div class="container container-constrained">
+  <div class="row">
+    <div class="col-12">
       <article class="post-body">
         {{ .Content }}
       </article>
       <div class="row">
-        <div class="col-6">
+        <div class="col-6 small">
           {{ if .PrevInSection }}
-            <a class="small" href="{{.PrevInSection.Permalink}}"><span class="small label-control"><i class="fa fa-angle-left"></i> Previous</span>
-            <div>{{.PrevInSection.Title}}</div></a>
+            <a href="{{.PrevInSection.Permalink}}"><span class="label-control"><i class="fa fa-angle-left"></i> Previous</span></a>
+            <div>{{.PrevInSection.Title}}</div>
           {{ end }}
+          &nbsp;
         </div>
-        <div class="col-6 text-right">
+        <div class="col-6 text-right small">
           {{ if .NextInSection }}
-            <a class="small" href="{{.NextInSection.Permalink}}"><span class="small label-control">Next <i class="fa fa-angle-right"></i></span>
-            <div>{{.NextInSection.Title}}</div></a>
+            <a href="{{.NextInSection.Permalink}}"><span class="label-control">Next <i class="fa fa-angle-right"></i></span></a>
+            <div>{{.NextInSection.Title}}</div>
           {{ end }}
+          &nbsp;
         </div>
       </div>
     </div>
