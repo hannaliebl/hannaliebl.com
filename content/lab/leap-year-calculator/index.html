@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leap Year Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/leap-year.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section role="main">
+      <header id="top-header">
+        <div class="container">
+          <img src="./img/cal-icon.png" alt="calendar icon" class="center-block">
+          <h1 class="text-center">Leap Year Calculator</h1>
+          <p class="text-center">Because seasons do not end on whole days, every four years the year has an extra day, February 29, to avoid the calendar drifting from the seasons it marks. These years with extra days are called leap years, and this page will help you calculate various things relating to them.</p>
+          <a href="https://github.com/hannaliebl/leap-year-calculator">
+          <button class="btn btn-default center-block btn-lg" id="github-btn">View on Github</button></a>
+        </div>
+      </header>
+    <div class="container">
+      <div class="text-block row">
+        <div class="col-sm-6">
+          <h1>Next Leap Year</h1>
+          <p>Check to see if the current year is a leap year, and if not, when the next leap year will occur.</p>
+          <button type="submit" id="next-leap-year" class="btn btn-default">Find the next leap year</button><p id="show-next-leap-year" class="answer"></p>
+        </div>
+         <div class="col-sm-6">
+            <h1>Test a Single Year</h1>
+            <p>Test any year in the past or future to see if it was or will be a leap year.</p>
+            <form id="leap-year-finder" class="form-inline" role="form">
+              <div class="form-group">
+                <label for="year" class="sr-only">Year</label>
+                <input id="year" class="form-control" type="text" placeholder="Enter a year">
+              </div>
+                <button type="submit" class="btn btn-default inline-btn">Test</button>
+                <p class="text-danger" id="second-form-danger-text">Please enter a valid year</p>
+            </form>
+            <p id="answer-single-year" class="answer">
+            </p>
+        </div>
+      </div>
+      <div class="text-block col-sm-12">
+        <h1>Find a Range of Leap Years</h1>
+        <p>Here you can enter a range of years and this page will calculate every leap year that occurred between those two years (inclusive.)</p>
+        <form id="leap-year-range-finder" class="form-inline" role="form">
+          <div class="form-group">
+            <span>Calculate from</span>
+          </div>
+          <div class="form-group">
+            <label for="first-year" class="sr-only">First Year:</label>
+              <input id="first-year" class="form-control" type="text" placeholder="First year">
+          </div>
+          <div class="form-group">
+            <span>to</span>
+          </div>
+          <div class="form-group">
+              <label for="second-year" class="sr-only">Second Year:</label>
+              <input id="second-year" class="form-control" type="text" placeholder="Second year">
+            </div>
+                  <button type="submit" class="btn btn-default inline-btn">Show the range of leap years</button>
+                  <p class="text-danger" id="third-form-danger-text">Please enter a valid year in both fields, and make sure the first year comes before the second year.</p>
+
+        </form>
+        <h2 id="leap-year-range-heading" class="answer"></h2>
+        <ul id="leap-year-range" class="answer">
+        </ul>
+        </div>
+    </div>
+    </section>
+    </div>
+    <footer id="main-footer">
+      <div class="container">
+        <p class="text-center"><a href="http://www.hannaliebl.com">Back to hannaliebl.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
