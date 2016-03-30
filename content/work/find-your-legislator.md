@@ -7,7 +7,7 @@ featured_img = ""
 site_link = "../../../lab/find-your-legislator"
 summary = "Utilizing the Sunlight Foundation and Google Map APIs to help people find their legislators."
 tags = ["Design", "JavaScript", "Develpment"]
-thumbnail = "/img/work/find-your-legislator-big.png"
+thumbnail = "/img/work/find-your-legislator.png"
 title = "Find Your Legislator"
 
 +++

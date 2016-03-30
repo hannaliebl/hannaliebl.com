@@ -12,6 +12,10 @@
   text-transform: uppercase;
   font-family: $sans-serif-secondary;
   font-weight: 300;
+  &.mod-single-page {
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+  }
 }
 
 .post-meta {

@@ -4,14 +4,14 @@ date = "2016-03-14T12:43:44-07:00"
 draft = false
 featured = ["true"]
 featured_img = "/img/portland-adventure-thumb.jpg"
-thumbnail = "/img/work/choose-your-own-portland-adventure-big.png"
+thumbnail = "/img/work/choose-your-own-portland-adventure.png"
 tags = ["JavaScript", "Backbone", "Design"]
 title = "Choose Your Own Portland Adventure"
 summary = "A Backbone application using the Yelp API to help users find interesting things to do in Portland, Oregon."
 site_link = "http://portland-adventure.herokuapp.com/"
 +++
 <div class="text-center inline-image-container content-container-expanded">
-  <img src="/img/work/choose-your-own-portland-adventure-big.png" alt="A screenshot of the front page of our application, featuring Portland's current weather." class="img-responsive img-center"></img>
+  <img src="/img/work/choose-your-own-portland-adventure.png" alt="A screenshot of the front page of our application, featuring Portland's current weather." class="img-responsive img-center"></img>
   <div class="caption-container">
     <div class="inline-image-caption">The first page of our application, featuring Portland's current weather.</div>
   </div>

@@ -7,7 +7,7 @@ featured_img = ""
 site_link = "http://www.tenakeelogging.com/"
 summary = "Website design for a small milling company in Alaska."
 tags = ["Design", "Web Design"]
-thumbnail = "/img/work/tenakee-logging-big.png"
+thumbnail = "/img/work/tenakee-logging.png"
 title = "Tenakee Logging"
 
 +++

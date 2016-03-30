@@ -5,15 +5,19 @@
     <div class="col-12">
       <h1>{{ .Title }}</h1>
       <div class="post-meta">
-        <span class="date-posted">{{ .Date.Format "Jan. 1, 2006" }} // </span>
         <span class="demi-word">POSTED IN:</span>
         {{ range .Params.categories }}
-          <a href="/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
+          <a href="/work/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
         {{ end }}
         <span class="demi-word">TAGS:</span>
         {{ range .Params.tags }}
           <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
         {{ end }}
+        {{if .Params.site_link }}
+        <div class="text-center">
+          <a class="read-more text-center" href="{{ .Params.site_link }}">VISIT SITE <i class="fa fa-external-link-square"></i></a>
+        </div>
+        {{end}}
       </div>
     </div>
   </div>
@@ -24,18 +28,18 @@
       <article class="post-body">
         {{ .Content }}
       </article>
-      <div class="row">
+      <div class="row post-body">
         <div class="col-6 small">
           {{ if .PrevInSection }}
             <a href="{{.PrevInSection.Permalink}}"><span class="label-control"><i class="fa fa-angle-left"></i> Previous</span></a>
-            <div>{{.PrevInSection.Title}}</div>
+            <p>{{.PrevInSection.Title}}</p>
           {{ end }}
           &nbsp;
         </div>
         <div class="col-6 text-right small">
           {{ if .NextInSection }}
             <a href="{{.NextInSection.Permalink}}"><span class="label-control">Next <i class="fa fa-angle-right"></i></span></a>
-            <div>{{.NextInSection.Title}}</div>
+            <p>{{.NextInSection.Title}}</p>
           {{ end }}
           &nbsp;
         </div>

@@ -229,9 +229,9 @@ ul.structure-list {
       border: 2px solid #fff; }
 
 .gradient-overlay {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, transparent 100%);
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.45) 0%, transparent 100%);
-  background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, transparent 100%);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.25) 0%, transparent 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.25) 0%, transparent 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, transparent 100%);
   /* Chrome10-25,Safari5.1-6 */
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
@@ -429,6 +429,9 @@ blockquote {
   text-transform: uppercase;
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300; }
+  .date-posted.mod-single-page {
+    font-size: 2.2rem;
+    padding-bottom: 20px; }
 
 .post-meta {
   font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
