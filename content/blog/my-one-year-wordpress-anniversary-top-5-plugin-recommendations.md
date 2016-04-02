@@ -3,7 +3,7 @@ date = "2013-10-14T13:37:32-08:00"
 draft = false
 title = "My One-Year WordPress Anniversary Top-5 Plugin Recommendations"
 categories = ["Wordpress"]
-tags = ["Plugins", "Wordpress"]
+tags = ["Plugins", "Resources"]
 featured = ["false"]
 summary = "After a year of using Wordpress, here are my favorite five plugins."
 +++

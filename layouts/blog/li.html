@@ -2,7 +2,7 @@
   <article class="article-preview">
     <h2 class="post-title"><a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">{{ .Title }}</a></h2>
     <div class="post-meta">
-      <span class="date-posted">{{ .Date.Format "Jan. 1, 2006" }} // </span>
+      <span class="date-posted">{{ .Date.Format "Jan. 2, 2006" }} // </span>
       <span class="demi-word">POSTED IN:</span>
       {{ range .Params.categories }}
         <a href="/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
