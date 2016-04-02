@@ -152,7 +152,7 @@ input, select {
     height: 4px;
     background: transparent;
     width: 0;
-    transition: all 0.5s; }
+    transition: all linear 0.3s; }
   .top-level-navigation a:hover:after {
     width: 100%;
     background: #FF8D10; }
@@ -329,7 +329,7 @@ p > a {
   font-weight: 400;
   border-bottom: 1px solid; }
   p > a:hover {
-    transition: all 0.5s;
+    transition: all linear 0.3s;
     border-bottom: 1px solid #FF8D10; }
 
 p > strong {
@@ -452,7 +452,7 @@ blockquote {
   border: 2px solid #07BEB8;
   color: #07BEB8; }
   .post-tag:hover, .post-category:hover {
-    transition: all 0.5s;
+    transition: all linear 0.3s;
     border: 2px solid #FF8D10; }
 
 .article-preview {
@@ -470,8 +470,17 @@ blockquote {
   padding-top: 10px;
   margin-right: 20px; }
   .read-more:hover {
-    transition: all 0.5s;
+    transition: all linear 0.3s;
     color: #FF8D10; }
+
+.read-more.mod-primary-link {
+  background: #07BEB8;
+  border: 2px solid #07BEB8;
+  padding: 10px;
+  margin-top: 16px;
+  color: #fff; }
+  .read-more.mod-primary-link:hover {
+    border: 2px solid #FF8D10; }
 
 code {
   background: #f2f2f2;
@@ -485,7 +494,7 @@ code {
   padding: 2px 5px;
   margin: 4px 0; }
   .label-control:hover {
-    transition: all 0.5s;
+    transition: all linear 0.3s;
     background: #FF8D10;
     color: #fff; }
 
@@ -497,7 +506,7 @@ ul.pagination > li > a, .pagination > li > span {
   text-decoration: none;
   background-color: #fff; }
   ul.pagination > li > a:hover, .pagination > li > span:hover {
-    transition: all 0.5s;
+    transition: all linear 0.3s;
     background: #FF8D10;
     color: #fff; }
 

@@ -67,6 +67,17 @@
   }
 }
 
+.read-more.mod-primary-link {
+  background: $post-meta-link;
+  border: 2px solid $post-meta-link;
+  padding: 10px;
+  margin-top: 16px;
+  color: #fff;
+  &:hover {
+    border: 2px solid $highlight-color;
+  }
+}
+
 code {
   background: darken(#fff, 5%);
   padding: 3px 2px;
