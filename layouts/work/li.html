@@ -8,9 +8,9 @@
       <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
     {{ end }}
     <p class="small">{{ .Params.summary }}</p>
-    <a class="read-more" href="{{ .Permalink }}">READ MORE <i class="fa fa-arrow-circle-right"></i></a>
+    <a class="icon-link" href="{{ .Permalink }}">READ MORE <i class="fa fa-arrow-circle-right"></i></a>
     {{if .Params.site_link }}
-    <a class="read-more" href="{{ .Params.site_link }}">VISIT SITE <i class="fa fa-external-link-square"></i>
+    <a class="icon-link" href="{{ .Params.site_link }}">VISIT SITE <i class="fa fa-external-link-square"></i>
     {{end}}
   </a>
   </div>

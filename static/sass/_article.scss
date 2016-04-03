@@ -1,20 +1,12 @@
+// post title in list view
 .post-title {
   margin: 0;
   padding: 10px 0;
 }
 
-.date-posted {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: $post-meta;
-  text-transform: uppercase;
-  font-family: $sans-serif-secondary;
-  font-weight: 300;
-  &.mod-single-page {
-    font-size: 2.2rem;
-    padding-bottom: 20px;
+.work-heading-img-section {
+  &:hover {
+    opacity: 0.8;
   }
 }
 
@@ -23,12 +15,16 @@
   font-weight: 300;
   color: $post-meta;
   padding-bottom: 10px;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
 
-.demi-word {
-  display: inline-block;
-  line-height: 1.2;
-  font-size: 1.5rem;
+.date-posted {
+  text-transform: uppercase;
+  &.mod-single-page {
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+  }
 }
 
 .post-tag, .post-category {
@@ -44,16 +40,7 @@
   }
 }
 
-.article-preview {
-  margin-bottom: 20px;
-}
-
-// entire post, single page view
-.post-body {
-  @include vertical-text-rhythm()
-}
-
-.read-more {
+.icon-link {
   font-size: 2rem;
   font-family: $sans-serif-secondary;
   font-weight: 500;
@@ -67,7 +54,7 @@
   }
 }
 
-.read-more.mod-primary-link {
+.icon-link.mod-primary-link {
   background: $post-meta-link;
   border: 2px solid $post-meta-link;
   padding: 10px;
@@ -78,9 +65,14 @@
   }
 }
 
-code {
-  background: darken(#fff, 5%);
-  padding: 3px 2px;
+// container for entire article snippet in list view
+.article-preview {
+  margin-bottom: 20px;
+}
+
+// entire post, single page view
+.post-body {
+  @include vertical-text-rhythm()
 }
 
 .label-control {

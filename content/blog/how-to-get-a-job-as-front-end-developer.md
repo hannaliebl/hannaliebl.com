@@ -3,6 +3,7 @@ categories = ["Web Design", "Web Development"]
 date = "2014-04-01T18:33:31-08:00"
 draft = false
 featured = ["true"]
+img_credit = "Photo: wocintechchat.com"
 tags = ["Guide", "Career Advice"]
 featured_img = "/img/how-to-get-front-end-dev-job-thumb.jpg"
 title = "How to Get a Job as a Front End Developer"

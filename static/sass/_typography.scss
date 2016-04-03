@@ -65,16 +65,58 @@ h4 {
   font-size: 2.7rem;
 }
 
+ol, ul {
+  margin-left: 40px;
+  @include vertical-text-rhythm()
+  li {
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+    line-height: 1.4;
+  }
+}
+
+blockquote {
+  background: $content-box;
+  font-style: italic;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 10px solid $secondary-text-color;
+}
+
+code {
+  background: darken(#fff, 5%);
+  padding: 3px 2px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .small {
   font-size: 1.8rem;
 }
+
+.top-level-navigation a {
+  color: $primary-nav-color;
+}
+
 .page-intro {
   color: #fff;
 }
 
+.work-heading-section {
+  margin-top: 20px;
+}
+
 .page-intro-heading {
   font-family: $sans-serif-secondary;
-  font-size: 6.7rem;
+  font-size: 5.7rem;
   margin: 0;
   padding: 0;
 }
@@ -82,14 +124,14 @@ h4 {
 .page-intro-subheading {
   font-family: $sans-serif-secondary;
   font-weight: 200;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
 }
 
 .page-intro-text {
   padding-top: 20px;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -109,34 +151,24 @@ h4 {
   font-size: 2.2rem;
 }
 
-.top-level-navigation a {
-  color: $primary-nav-color;
-}
-
-ol, ul {
-  margin-left: 60px;
-  @include vertical-text-rhythm()
-  li {
-    margin-bottom: 7.5px;
-    margin-top: 7.5px;
-    line-height: 1.4;
+// non-mobile specific styles
+@media only screen
+and (min-width : 768px) {
+  ol, ul {
+    margin-left: 60px;
   }
-}
+  .work-heading-section {
+    margin-top: 0px;
+  }
+  .page-intro-heading {
+    font-size: 6.7rem;
+  }
 
-blockquote {
-  background: $content-box;
-  font-style: italic;
-  font-size: 2.4rem;
-  line-height: 1.4;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-left: 10px solid $secondary-text-color;
-}
+  .page-intro-subheading {
+    font-size: 3rem;
+  }
 
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
+  .page-intro-text {
+    font-size: 3.5rem;
+  }
 }

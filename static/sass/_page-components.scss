@@ -93,6 +93,7 @@ ul.structure-list {
 }
 
 .featured-container {
+  position: relative;
   height: 250px;
   width: 100%;
   color: #fff;
@@ -125,6 +126,14 @@ ul.structure-list {
       border: 2px solid #fff;
     }
   }
+  .img-credit {
+    position: absolute;
+    left:3px;
+    bottom:3px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px #000;
+  }
 }
 
 .gradient-overlay {
@@ -134,15 +143,9 @@ ul.structure-list {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
-.p-spacing {
-  line-height: 1.4;
-  padding: 10px 0;
-}
-
 .work-row {
   @include row-spacing()
   h2 {
-    // font-size: 2.8rem;
     padding: 0;
     margin: 0;
   }

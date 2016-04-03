@@ -14,13 +14,6 @@
   margin-right: 20px;
   width: 50%;
 }
-@media (max-width: 768px) {
-  .img-left-inline {
-    float: left;
-    margin-right: 0;
-    width: 100%;
-  }
-}
 
 .inline-image-container {
   padding: 0 0 20px 0;
@@ -37,13 +30,6 @@
   margin: 10px 0;
 }
 
-@media (max-width: 768px) {
-  .inline-image {
-    max-width: 50%;
-    margin: 15px 5px 5px 5px;
-  }
-}
-
 .caption-container {
   width: 100%;
   margin: 0 auto;
@@ -53,4 +39,16 @@
 .inline-image-caption {
   font-size: 1.5rem;
   padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .img-left-inline {
+    float: left;
+    margin-right: 0;
+    width: 100%;
+  }
+  .inline-image {
+    max-width: 50%;
+    margin: 15px 5px 5px 5px;
+  }
 }

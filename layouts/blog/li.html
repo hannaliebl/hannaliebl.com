@@ -3,16 +3,16 @@
     <h2 class="post-title"><a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}">{{ .Title }}</a></h2>
     <div class="post-meta">
       <span class="date-posted">{{ .Date.Format "Jan. 2, 2006" }} // </span>
-      <span class="demi-word">POSTED IN:</span>
+      <span>POSTED IN:</span>
       {{ range .Params.categories }}
         <a href="/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
       {{ end }}
-      <span class="demi-word">TAGS:</span>
+      <span>TAGS:</span>
       {{ range .Params.tags }}
         <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
       {{ end }}
     </div>
     <div class="article-body"><p>{{ .Params.summary }}</p></div>
-    <a class="read-more" href="{{ .Permalink }}">READ MORE <i class="fa fa-arrow-circle-right"></i></a>
+    <a class="icon-link" href="{{ .Permalink }}">READ MORE <i class="fa fa-arrow-circle-right"></i></a>
   </article>
 </li>

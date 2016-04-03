@@ -17,6 +17,7 @@
   margin: 0;
 }
 
+// target screens larger than main container
 @media only screen
 and (min-width : 850px) {
   .content-container-expanded {
@@ -34,11 +35,6 @@ and (min-width : 850px) {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-// .container-constrained .col-6 {
-//   width: 50%;
-//   float: left;
-// }
 
 .clearfix:before, .container:before, .row:before, .inline-image-container:before {
   display: table;
