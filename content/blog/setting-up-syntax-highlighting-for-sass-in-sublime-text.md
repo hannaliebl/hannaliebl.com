@@ -2,8 +2,8 @@
 date = "2013-08-06T22:28:15-08:00"
 draft = false
 title = "Setting Up Syntax Highlighting for SASS in Sublime Text"
-categories = ["Web Development"]
-tags = ["Guide", "SASS", "Sublime Text"]
+blogcategories = ["Guide"]
+blogtags = ["SASS", "Dev Tools"]
 featured = ["false"]
 summary = "A guide to getting SASS syntax highlighting to work in Sublime Text."
 +++

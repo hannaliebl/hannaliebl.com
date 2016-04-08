@@ -1,10 +1,10 @@
 +++
-categories = ["Guide"]
+blogcategories = ["Guide"]
 date = "2015-01-23T00:00:00-00:00"
 draft = false
 featured = ["false"]
 summary = "Here's how I set up my dev environment."
-tags = ["My Setup"]
+blogtags = ["My Setup", "Dev Tools", "Resources"]
 title = "Setting Up My Mac for Development Work"
 
 +++
@@ -13,13 +13,11 @@ I started a new job recently, which meant a new work computer. I also gave mysel
 I’m assuming a Mac environment, by the way…
 
 1. First I create a user and login. Then I switch some basic OS X settings to suit my preferences: I make the dock smaller, turn on touch to click for the trackpad, and tweak some notification settings. I also set fun things like my wallpaper here. I also set up basic Finder settings, like exposing hidden files. To do this, go to the Terminal and type:
-
 <pre class="language-bash">
   <code class="language-bash">
     defaults write com.apple.finder AppleShowAllFiles YES
   </code>
 </pre>
-
 Then hit enter and relaunch Finder. I create some basic folder structure here as well – I like to have a code/ and src/ folder at my user root, for example.
 
 2. Then I go on a downloading spree! First, because it takes so long, I get started on installing Xcode and the Xcode Command Line Tools. Now, Windows has a nice little app called [Ninite](https://ninite.com/) that automatically installs apps for you, and the most similar I’ve found is [GetMacApps](http://www.getmacapps.com/). In any case, however I get them, I download Chrome and Firefox, music apps like Spotify and Last.FM, VLC to watch video files, Transmission for torrents, Dropbox for cloud backups, Sourcetree for visual Git management, Evernote for notes (and saving recipes…best use of Evernote I’ve found), Sublime Text 3 as my editor, iTerm2 to serve as my terminal, DiskInventoryX to better see what files are taking up hard drive space, Flux so I can fall asleep at night, and Spectacle for window management shortcuts.

@@ -1,10 +1,10 @@
 +++
-categories = ["Web Development"]
-date = "2014-09-12T00:00:00-00:00"
+blogcategories = ["JavaScript"]
+date = "2014-09-17T00:00:00-00:00"
 draft = false
 featured = ["false"]
 summary = "My starter template for Angular apps, using Gulp."
-tags = ["AngularJS", "Gulp", "Taskrunners"]
+blogtags = ["AngularJS", "Gulp", "Task Runners", "SASS"]
 title = "Gulp Angular Skeleton: A Front End App Skeleton for Building Angular Apps"
 
 +++

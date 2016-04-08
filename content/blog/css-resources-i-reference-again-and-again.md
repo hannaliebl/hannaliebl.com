@@ -1,10 +1,10 @@
 +++
-categories = ["CSS"]
+blogcategories = ["CSS"]
 date = "2014-08-28T00:00:00-00:00"
 draft = false
 featured = ["false"]
 summary = "After years of front end design, these are CSS resources I can't live without."
-tags = ["SASS", "Web Design", "Resources"]
+blogtags = ["SASS", "Resources"]
 title = "CSS Resources I Reference Again and Again"
 
 +++

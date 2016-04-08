@@ -2,8 +2,8 @@
 date = ""
 draft = true
 title = ""
-categories = [""]
-tags = [""]
+workcategories = [""]
+worktags = [""]
 featured = ["false"]
 featured_img = ""
 thumbnail = ""

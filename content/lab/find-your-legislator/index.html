@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Your Legislator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300|Lato:600' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body>
+    <header id="top-header">
+      <h1 class="text-center">FIND YOUR LEGISLATOR</h1>
+    </header>
+    <section role="main" class="container">
+      <p>First, enter your address, then we will generate a list of all your legislators, their titles, party, and contact information. This information is provided by the <a href="http://www.sunlightfoundation.com/">Sunlight Foundation</a> and uses the Google Maps API.</p>
+      <form id="get-address" class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="street" class="col-sm-3 control-label">STREET: </label>
+            <div class="col-sm-9">
+              <input id="street" class="form-control" type="text">
+            </div>
+            <label for="citystate" class="col-sm-3 control-label">CITY, STATE: </label>
+            <div class="col-sm-9">
+              <input id="citystate" class="form-control" type="text">
+            </div>
+          </div>
+           <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-default">Look Up</button>
+              </div>
+              <span class="text-danger hidden">Sorry, there was an error with your inputted address or an error on Google's end. Please try again!</span>
+            </div>
+      </form>
+      <ul id="legislators" class="text-center">
+      </ul>
+    </section>
+    <footer id="main-footer">
+      <p class="text-center"><a href="http://www.hannaliebl.com">Back to hannaliebl.com</a></p>
+    </footer>
+  </body>
+</html>

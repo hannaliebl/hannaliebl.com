@@ -1,9 +1,9 @@
 +++
-categories = ["Web Development"]
+blogcategories = ["Web Development"]
 date = "2014-02-11T18:23:04-08:00"
 draft = false
 featured = ["false"]
-tags = ["Guide", "PostgresSQL", "Rails"]
+blogtags = ["PostgresSQL", "Rails", "Learning to Code"]
 title = "Here’s to the Hunt (Also, Remember Postgres.app’s Version Name When Changing your PATH)"
 summary = "A Postgres problem, how I fixed it, and why this is what coding is all about."
 

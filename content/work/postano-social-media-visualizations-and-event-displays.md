@@ -1,11 +1,11 @@
 +++
-categories = ["Postano"]
+workcategories = ["Postano"]
 date = "2014-11-30T14:00:00-00:00"
 draft = false
 featured = ["false"]
 featured_img = ""
 summary = "Design and development work completed while working for Postano."
-tags = ["Design", "Development"]
+worktags = ["Design", "Development"]
 thumbnail = "/img/work/essence-context.png"
 title = "Postano Social Media Visualizations and Event Displays"
 

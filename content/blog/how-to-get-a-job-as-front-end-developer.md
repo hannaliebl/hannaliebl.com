@@ -1,10 +1,10 @@
 +++
-categories = ["Web Design", "Web Development"]
+blogcategories = ["Guide"]
 date = "2014-04-01T18:33:31-08:00"
 draft = false
 featured = ["true"]
 img_credit = "Photo: wocintechchat.com"
-tags = ["Guide", "Career Advice"]
+blogtags = ["Front End Development", "Learning to Code"]
 featured_img = "/img/how-to-get-front-end-dev-job-thumb.jpg"
 title = "How to Get a Job as a Front End Developer"
 summary = "The story of how I became a developer, and what I think is important for others trying to break into the field."

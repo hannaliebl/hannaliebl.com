@@ -1,10 +1,10 @@
 +++
-categories = ["JavaScript"]
+blogcategories = ["JavaScript"]
 date = "2014-06-27T10:00:00-08:00"
 draft = false
 featured = ["false"]
-tags = ["Firefox", "Resources", "Learning to Code"]
-title = "Heres to Firefox's Scratchpad"
+blogtags = ["Firefox", "Resources", "Learning to Code"]
+title = "Here's to Firefox's Scratchpad"
 summary = "The scratchpad in Firefox makes learning JavaScript a joy."
 +++
 I’ll be honest, I mostly use Chrome for web development. This is partially because my current job calls for developing things that only use webkit and Chrome (I know this sounds odd…it is pretty unusual), but, regardless, Firefox is also a fine browser, if not the current golden child. Maybe this is old news for people who develop with Firefox, but the Scratchpad on Firefox is, in my opinion, noteworthy enough to warrant its own post.

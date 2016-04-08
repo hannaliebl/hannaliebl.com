@@ -2,8 +2,8 @@
 date = ""
 draft = true
 title = ""
-categories = [""]
-tags = [""]
+blogcategories = [""]
+blogtags = [""]
 featured = ["false"]
 summary = ""
 +++

@@ -5,14 +5,14 @@
     <div class="col-12">
       <h1>{{ .Title }}</h1>
       <div class="post-meta">
-        <div class="date-posted mod-single-page">{{ .Date.Format "Jan. 1, 2006" }}</div>
+        <div class="date-posted mod-single-page">{{ .Date.Format "Jan. 2, 2006" }}</div>
         <span class="demi-word">POSTED IN:</span>
-        {{ range .Params.categories }}
-          <a href="/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
+        {{ range .Params.blogcategories }}
+          <a href="/blog-categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
         {{ end }}
         <span class="demi-word">TAGS:</span>
-        {{ range .Params.tags }}
-          <a href="/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+        {{ range .Params.blogtags }}
+          <a href="/blog-tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
         {{ end }}
       </div>
     </div>
@@ -40,6 +40,32 @@
           &nbsp;
         </div>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div id="disqus_thread"></div>
+      <script>
+      /**
+      * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+      */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+
+      s.src = '//hannaliebl.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     </div>
   </div>
 </div>

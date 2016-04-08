@@ -1,10 +1,10 @@
 +++
-categories = ["AngularJS"]
+blogcategories = ["JavaScript"]
 date = "2014-05-07T18:34:02-08:00"
 draft = false
 featured = ["false"]
-tags = ["JavaScript", "$Filter"]
-title = "Formatting JavaScript Date in AngularJS Outside of the View"
+blogtags = ["AngularJS", "Guide"]
+title = "Formatting JavaScript's Date in AngularJS Outside of the View"
 summary = "Using Angular's $filter service to format dates."
 +++
 Oftentimes, especially in API calls, dates and times need to be entered into the call in a specific way. JavaScript offers the handy Date(); object, which makes it easy to call the current time or create and store a date in the past or future, but formatting the result into a custom format (such as `mm/dd/yy` or `yyy/mm/dd/hh/mm/ss`) is not possible, as best I could tell, in vanilla JavaScript.

@@ -25,9 +25,12 @@
             <div class="gradient-overlay">
               <div class="well">
                 <h1>{{ .LinkTitle }}</h1>
-                {{ range .Params.tags }}
+                <!-- {{ range .Params.worktags }}
                   <span class="post-tag">{{ . }}</span>
                 {{ end }}
+                {{ range .Params.blogtags }}
+                  <span class="post-tag">{{ . }}</span>
+                {{ end }} -->
               </div>
               <span class="img-credit">{{ .Params.img_credit }}</span>
             </div>

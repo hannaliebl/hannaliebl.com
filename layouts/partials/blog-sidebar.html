@@ -9,9 +9,9 @@
 <div class="content-box well">
   <h2 class="content-box-title ">Categories</h2>
   <ul class="structure-list sidebar-list">
-    {{ range first 10 .Site.Taxonomies.categories.ByCount }}
+    {{ range first 10 .Site.Taxonomies.blogcategories.ByCount }}
     <li>
-      <a href="/categories/{{ .Name | urlize }}" class="list-group-item">{{ .Name }}</a>
+      <a href="/blogcategories/{{ .Name | urlize }}" class="list-group-item">{{ .Name }}</a>
     </li>
     {{ end }}
   </ul>

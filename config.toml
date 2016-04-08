@@ -13,4 +13,8 @@ paginate = 5
 [taxonomies]
   tag = "tags"
   category = "categories"
+  worktag = "worktags"
+  blogtag = "blogtags"
+  workcategory = "workcategories"
+  blogcategory = "blogcategories"
   featured = "featured"
