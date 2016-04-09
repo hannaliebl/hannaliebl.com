@@ -30,7 +30,6 @@ p {
  }
 
 p > a {
-  font-weight: 400;
   border-bottom: 1px solid;
   &:hover {
     transition: $default-transition;

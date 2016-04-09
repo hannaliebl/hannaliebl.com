@@ -1,0 +1,58 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+<div class="container page-body">
+  <div class="row">
+    <div class="col-12">
+      <h1>Work – {{ .Title }}</h1>
+    </div>
+  </div>
+{{ range $index, .Paginator.Pages }}
+  <div class="row work-row">
+    <div class="col-6">
+      <a href="{{ .Permalink }}"><img class="work-heading-img-section img-responsive" src="{{ .Params.thumbnail}}" /></a>
+    </div>
+    <div class="col-6 work-heading-section">
+      <h2>{{ .Title }}</h2>
+      {{ range .Params.worktags }}
+        <a href="/worktags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+      {{ end }}
+      <p class="small">{{ .Params.summary }}</p>
+      <a class="icon-link" href="{{ .Permalink }}">READ MORE <i class="fa fa-arrow-circle-right"></i></a>
+      {{if .Params.site_link }}
+      <a class="icon-link" href="{{ .Params.site_link }}">VISIT SITE <i class="fa fa-external-link-square"></i>
+      {{end}}
+    </a>
+    </div>
+  </div>
+{{ end }}
+  <nav>
+    <ul class="pagination clearfix">
+      {{ if .Paginator.HasPrev }}
+        <li>
+          <a href="{{ .Paginator.First.URL }}" aria-label="First">
+            <span aria-hidden="true"><i class="fa fa-angle-double-left"></i></span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ .Paginator.Prev.URL }}" aria-label="Next">
+            <span aria-hidden="true">{{ .Paginator.Prev.PageNumber }}</span>
+          </a>
+        </li>
+      {{ end }}
+      <li class="active"><a href="#">{{ .Paginator.PageNumber }}</a></li>
+      {{ if .Paginator.HasNext }}
+      <li>
+        <a href="{{ .Paginator.Next.URL }}" aria-label="Next">
+          <span aria-hidden="true">{{ .Paginator.Next.PageNumber }}</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ .Paginator.Last.URL }}" aria-label="Last">
+          <span aria-hidden="true"><i class="fa fa-angle-double-right"></i></span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</div>
+{{ partial "footer.html" .}}
