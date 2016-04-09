@@ -31,7 +31,6 @@ Then hit enter and relaunch Finder. I create some basic folder structure here as
 6. Next I configure my .bash_profile. I add some shortcuts, history via the up arrow, color options to the shell, and configure my command prompt. I keep my command prompt pretty simple: just my username, current path, and then git branch information followed by the good ol’ $ sign. I have a few shortcuts for common commands in git, like ‘gitst’ for ‘git status’ and ‘gitco’ for ‘git checkout’. I also make a shortcut for Python’s simple HTTP server, because sometimes it’s useful just to pop it open to look at files served through a real web server. My [dotfiles](https://github.com/hannaliebl/dotfiles) are on Github if you are curious about those.
 
 7. At this point I symlink to <code>subl</code>, Sublime Text’s build in command line tool. This allows me to type ‘subl filename’ and then have that file open up in Sublime. This is done by typing the following into the terminal:
-
 <pre class="language-bash">
   <code class="language-bash">
     ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl

@@ -1,5 +1,5 @@
 +++
-blogcategories = ["Web Development"]
+blogcategories = ["Guide"]
 date = "2014-02-11T18:23:04-08:00"
 draft = false
 featured = ["false"]

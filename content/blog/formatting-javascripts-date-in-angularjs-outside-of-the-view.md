@@ -3,7 +3,7 @@ blogcategories = ["JavaScript"]
 date = "2014-05-07T18:34:02-08:00"
 draft = false
 featured = ["false"]
-blogtags = ["AngularJS", "Guide"]
+blogtags = ["AngularJS"]
 title = "Formatting JavaScript's Date in AngularJS Outside of the View"
 summary = "Using Angular's $filter service to format dates."
 +++

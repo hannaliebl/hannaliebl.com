@@ -4,6 +4,9 @@
   </div>
   <div class="col-6 work-heading-section">
     <h2>{{ .Title }}</h2>
+    {{ range .Params.workcategories }}
+      <a href="/workcategories/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+    {{ end }}
     {{ range .Params.worktags }}
       <a href="/worktags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
     {{ end }}

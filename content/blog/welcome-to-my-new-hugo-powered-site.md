@@ -1,6 +1,6 @@
 +++
-blogcategories = ["Front End Design", "Site Announcements"]
-date = "2016-03-08T12:04:58-08:00"
+blogcategories = ["Site Announcements"]
+date = "2016-04-09T12:04:58-08:00"
 draft = false
 featured = ["true"]
 featured_img = "/img/hugo-thumbnail.jpeg"

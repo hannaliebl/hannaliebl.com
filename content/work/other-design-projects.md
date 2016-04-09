@@ -1,12 +1,12 @@
 +++
-workcategories = ["Design"]
+workcategories = ["Client Work"]
 date = "2011-01-01T14:53:53-07:00"
 draft = false
 featured = ["false"]
 featured_img = ""
 site_link = ""
 summary = "Other websites and graphic design projects I've made over the years."
-worktags = ["Wordpress", "Website Design", "Graphic Design"]
+worktags = ["Wordpress", "Web Design", "Graphic Design"]
 thumbnail = "/img/work/other-design-work.png"
 title = "Other Design Projects"
 
@@ -21,3 +21,10 @@ title = "Other Design Projects"
 I have designed and built other websites that are no longer online. For example, I made a website for a dentist in my hometown. In addition to listing his location and services, it featured custom Photoshop illustrations I made. I also designed a Wordpress-powered site for my alma mater's ultimate frisbee teams. The teams used the site to publish rosters, tournament news, and photos.
 
 I have additional work making designs for use on merchandise. I have made illustrations and logos that were printed on shirts and merchandise at ultimate frisbee tournaments.
+
+<div class="text-center inline-image-container content-container-expanded">
+  <img src="/img/work/downtowndental-banner.jpg" alt="The banner image I painted in Photoshop for an old site I designed, featuring a view of the buildings in downtown Granville, Ohio." class="img-responsive img-center"></img>
+  <div class="caption-container">
+    <div class="inline-image-caption">The banner image I painted in Photoshop for an old site I designed.</div>
+  </div>
+</div>
