@@ -1,11 +1,12 @@
 # .Site config
-baseurl = "http://www.hannaliebl.com/"
+baseurl = "http://hannaliebl.com/"
 languageCode = "en-us"
 title = "Hanna Liebl's Site: Web Development Writing and Projects"
 description = ""
 pluralizelisttitles = false
 preserveTaxonomyNames = true
 paginate = 5
+disqusShortname = "hannaliebl"
 
 [author]
   name = "Hanna Liebl"
