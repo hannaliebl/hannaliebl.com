@@ -22,17 +22,8 @@
   }
   a {
     font-weight: 300;
-    &:after {
-      content: "";
-      display: block;
-      height: 4px;
-      background: transparent;
-      width: 0;
-      transition: $default-transition;
-    }
-    &:hover:after {
-      width: 100%;
-      background: $highlight-color;
+    &:hover {
+      border-bottom: 4px solid $highlight-color;
     }
   }
 }
