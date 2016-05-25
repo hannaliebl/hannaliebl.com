@@ -1,0 +1,128 @@
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(50, 50, 50);
+}
+
+.container {
+  margin: 1em auto;
+  width: 80%;
+  max-width: 960px;
+}
+
+.header {
+  margin: 0 auto 1em auto;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.content {
+  margin: 2em 0;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin: 0.6em 0;
+}
+
+a, .link {
+  color: rgb(7, 140, 198);
+  text-decoration: none;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.page-title {
+  font-size: 3.5em;
+}
+
+.page-subheading {
+  font-size: 2em;
+}
+
+h1, h2 {
+  font-family: 'Spinnaker', sans-serif;
+  margin: 0.2em 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+.emoji {
+  font-size: 2.1em;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.small {
+  display: inline;
+  font-size: 0.6em;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-4, .full-col {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen
+and (min-width : 768px) {
+  .col-4 {
+    float: left;
+    width: 25%;
+  }
+  .full-col {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media only screen
+and (min-width : 769px) and (max-width:1000px) {
+  .col-4 {
+    float: left;
+    width: 50%;
+  }
+  .full-col {
+    float: left;
+    width: 100%;
+  }
+}
+
+.clearfix:before, .row:before {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after, .row:after {
+  clear:both;
+  display: table;
+  content: " ";
+}
+
+.grid-block {
+  margin: 0.3em 0;
+  padding: 1em 0.2em;
+  text-align: center;
+}
