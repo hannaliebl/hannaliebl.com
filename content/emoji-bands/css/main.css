@@ -8,6 +8,10 @@ html {
   color: rgb(50, 50, 50);
 }
 
+img {
+  width: 38px;
+}
+
 .container {
   margin: 1em auto;
   width: 80%;
@@ -46,6 +50,14 @@ a, .link {
 
 .page-subheading {
   font-size: 2em;
+}
+
+.callout {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  margin: 1em 0;
+  border-radius: 5px;
+  font-size: 1.5em;
 }
 
 h1, h2 {

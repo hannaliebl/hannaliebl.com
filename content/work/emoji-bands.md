@@ -20,4 +20,4 @@ worktags = ["Web Design", "JavaScript"]
 
 This project is a simple visual riddle brought to life: what band, singer, or rapper does a certain group of emoji represent? A coworker came up with the idea on Slack since they have emoji integrations, and I thought I would continue the game and make a site about it.
 
-This was a weekend project, using just plain old JavaScript and CSS for a change. I learned unicode emoji support in the browser is pretty robust, though I didn't test older browsers.
+This was a weekend project, using just plain old JavaScript and CSS for a change. I learned unicode emoji support in the browser is pretty robust except for on Windows, so I made an image fallback site as well using [Emojione's](http://emojione.com/) images.
