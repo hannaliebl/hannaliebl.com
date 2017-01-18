@@ -13,39 +13,31 @@ Luckily, the app I was building ran on AngularJS, and so I could leverage Angula
 
 First, I set a variable with the plain old unformatted JavaScript date. If you want the present time, just use:
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  var myTimeUnformatted = new Date();
-  </code>
-</pre>
+~~~javascript
+var myTimeUnformatted = new Date();
+~~~
 
 
 But if you need, say, last week’s date, then do:
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  var lastWeekUnformatted = new Date(new Date().setDate(new Date().getDate() - 7));
-  </code>
-</pre>
+~~~javascript
+var lastWeekUnformatted = new Date(new Date().setDate(new Date().getDate() - 7));
+~~~
 
 This will return a date in this format: `Wed Apr 30 2014 16:33:22 GMT-0700 (PDT)`
 
 Now, to convert this date into whatever format we need (inside an Angular app!), enter $filter. First, because we are not working in the view, but in a service or controller or other part of the app, you have to inject $filter into wherever you are calling it, much like you inject other Angular services like $http or $scope. In this case, I was calling $filter in a custom service, so you just enter it where you do other injections, for example:
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  angular.module('myApp')
-    .factory('myService', function ($filter, $http) { ...etc, etc
-  </code>
-</pre>
+~~~javascript
+angular.module('myApp')
+  .factory('myService', function ($filter, $http) { ...etc, etc
+~~~
 
 Now, it’s as simple as following the way the date filter$ is documented in the API:
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-    var lastWeek = $filter('date')(lastWeekUnformatted, 'yyyy-MM-dd');
-  </code>
-</pre>
+~~~javascript
+var lastWeek = $filter('date')(lastWeekUnformatted, 'yyyy-MM-dd');
+~~~
 
 Of course, here is where you can customize the output as you please, using the API doc linked to above. The example above would output: `2014-04-30`
 

@@ -23,48 +23,42 @@ How do we test that the `alertService` gets called on error? Remember, we don't 
 
 Here is how we mock `alertService` using `$provide`:
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  beforeEach(function() {
-    module(function($provide){
-      $provide.factory('alertService', function() {
-        var newAlert = jasmine.createSpy().and.returnValue('An error');
-        return {newAlert: newAlert};
-      });
+~~~javascript
+beforeEach(function() {
+  module(function($provide){
+    $provide.factory('alertService', function() {
+      var newAlert = jasmine.createSpy().and.returnValue('An error');
+      return {newAlert: newAlert};
     });
   });
-  </code>
-</pre>
+});
+~~~
 
 This goes before the inject function in the tests. We basically write a mini Angular factory whose one method is a Jasmine spy that returns a value we provide (in this case, just a string representing an error message.)
 
 We still have to inject the `alertService` in the inject block, but because of our previous setup, when we use `alertService` in our tests, it will call the mocked version. Here is our inject block, where we make sure to include `alertService`.
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  beforeEach(inject(function ($rootScope, $controller, $q, _alertService_, _kittensAvailableService_) {
-    $scope = $rootScope.$new();
-    deferred = $q.defer();
-    alertService = _alertService_
-    kittensAvailableService = _kittensAvailableService_
-    spyOn(kittensAvailableService, 'gatherKittens').and.returnValue(deferred.promise);
-    kittenViewCtrl = $controller('kittenViewCtrl');
-  }));
-  </code>
-</pre>
+~~~javascript
+beforeEach(inject(function ($rootScope, $controller, $q, _alertService_, _kittensAvailableService_) {
+  $scope = $rootScope.$new();
+  deferred = $q.defer();
+  alertService = _alertService_
+  kittensAvailableService = _kittensAvailableService_
+  spyOn(kittensAvailableService, 'gatherKittens').and.returnValue(deferred.promise);
+  kittenViewCtrl = $controller('kittenViewCtrl');
+}));
+~~~
 
 Finally, here are the tests that use the mock we wrote:
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  it('calls the alertService', function() {
-    expect(alertService.newAlert).toHaveBeenCalled();
-  });
-  it('sets the alert value to the returned value from alertService.newAlert', function() {
-    expect(kittenViewCtrl.alert).toEqual('An error');
-  });
-  </code>
-</pre>
+~~~javascript
+it('calls the alertService', function() {
+  expect(alertService.newAlert).toHaveBeenCalled();
+});
+it('sets the alert value to the returned value from alertService.newAlert', function() {
+  expect(kittenViewCtrl.alert).toEqual('An error');
+});
+~~~
 
 Because alertService.newAlert is a Jasmine spy, we can assert that it has been called, and we test that it equals the string that we returned in out mock.
 
@@ -74,57 +68,51 @@ The `alertService` even being called depends upon the failure of the promise tha
 
 We will again leverage Jasmine's ability to return a value from a spied upon function. First, I have to actually get a promise object to return. I inject Angular's own `$q` service in the inject block and use it to create a `deferred` object: `deferred = $q.defer()` In the same inject block, I spy on the `kittensAvailableService` and return the promise from the deferred object:
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  spyOn(kittensAvailableService, 'gatherKittens').and.returnValue(deferred.promise);
-  </code>
-</pre>
+~~~javascript
+spyOn(kittensAvailableService, 'gatherKittens').and.returnValue(deferred.promise);
+~~~
 
 Now I can test both the promise resolving successfully and unsuccessfully. The key, after either resolving or rejecting the promise, is to call `$scope.$apply()` to trigger a digest cycle, because the results of a promise in Angular are propagated asynchronously. Generally I put the promise resolution inside of a `beforeEach()` function block so I don't have to continually resolve or reject my promise and call `$scope.$apply()` in each of my individual tests.
 
 Below are the tests for the successful promise resolution. I can resolve the value returned from the promise with whatever I like, which is perfect, since I don't want to depend upon the actual service to give me a value.
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  describe('on successful data call', function() {
-    beforeEach(function() {
-      deferred.resolve([{foo: "foo"}, {bar: "bar"}]);
-      $scope.$apply();
-    });
-    it('sets kittens to the value of the response', function() {
-      expect(kittenViewCtrl.kittens).toEqual([{foo: "foo"}, {bar: "bar"}]);
-    });
-    it('sets loading to false', function() {
-      expect(kittenViewCtrl.loading).toEqual(false);
-    });
+~~~javascript
+describe('on successful data call', function() {
+  beforeEach(function() {
+    deferred.resolve([{foo: "foo"}, {bar: "bar"}]);
+    $scope.$apply();
   });
-  </code>
-</pre>
+  it('sets kittens to the value of the response', function() {
+    expect(kittenViewCtrl.kittens).toEqual([{foo: "foo"}, {bar: "bar"}]);
+  });
+  it('sets loading to false', function() {
+    expect(kittenViewCtrl.loading).toEqual(false);
+  });
+});
+~~~
 
 And below are the tests for the unsuccessful promise resolution (this is where I test that `alertService` has been called, like we went over in the first section of this post.)
 
-<pre class="language-javascript">
-  <code class="language-javascript">
-  describe('on unsuccessful data call', function() {
-    beforeEach(function() {
-      deferred.reject({error: "some error"});
-      $scope.$apply();
-    });
-    it('leave kittens value unchanged', function() {
-      expect(kittenViewCtrl.kittens).toEqual([]);
-    });
-    it('calls the alertService', function() {
-      expect(alertService.newAlert).toHaveBeenCalled();
-    });
-    it('sets the alert value to the returned value from alertService.newAlert', function() {
-      expect(kittenViewCtrl.alert).toEqual('An error');
-    });
-    it('sets loading to false', function() {
-      expect(kittenViewCtrl.loading).toEqual(false);
-    });
+~~~javascript
+describe('on unsuccessful data call', function() {
+  beforeEach(function() {
+    deferred.reject({error: "some error"});
+    $scope.$apply();
   });
-  </code>
-</pre>
+  it('leave kittens value unchanged', function() {
+    expect(kittenViewCtrl.kittens).toEqual([]);
+  });
+  it('calls the alertService', function() {
+    expect(alertService.newAlert).toHaveBeenCalled();
+  });
+  it('sets the alert value to the returned value from alertService.newAlert', function() {
+    expect(kittenViewCtrl.alert).toEqual('An error');
+  });
+  it('sets loading to false', function() {
+    expect(kittenViewCtrl.loading).toEqual(false);
+  });
+});
+~~~
 
 By using `$provide`, Jasmine's helpful `spyOn`, `createSpy`, and `returnValue` methods, and mocking promises using Angular's own `$q` service, you should be able to mock just about any dependency in Angular unit tests. I often find doing this helps me really just focus on testing the actual subject at hand, which is what unit tests are all about.
 

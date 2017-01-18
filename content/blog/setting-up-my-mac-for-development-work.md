@@ -13,11 +13,9 @@ I started a new job recently, which meant a new work computer. I also gave mysel
 I’m assuming a Mac environment, by the way…
 
 1. First I create a user and login. Then I switch some basic OS X settings to suit my preferences: I make the dock smaller, turn on touch to click for the trackpad, and tweak some notification settings. I also set fun things like my wallpaper here. I also set up basic Finder settings, like exposing hidden files. To do this, go to the Terminal and type:
-<pre class="language-bash">
-  <code class="language-bash">
-    defaults write com.apple.finder AppleShowAllFiles YES
-  </code>
-</pre>
+~~~bash
+defaults write com.apple.finder AppleShowAllFiles YES
+~~~
 Then hit enter and relaunch Finder. I create some basic folder structure here as well – I like to have a code/ and src/ folder at my user root, for example.
 
 2. Then I go on a downloading spree! First, because it takes so long, I get started on installing Xcode and the Xcode Command Line Tools. Now, Windows has a nice little app called [Ninite](https://ninite.com/) that automatically installs apps for you, and the most similar I’ve found is [GetMacApps](http://www.getmacapps.com/). In any case, however I get them, I download Chrome and Firefox, music apps like Spotify and Last.FM, VLC to watch video files, Transmission for torrents, Dropbox for cloud backups, Sourcetree for visual Git management, Evernote for notes (and saving recipes…best use of Evernote I’ve found), Sublime Text 3 as my editor, iTerm2 to serve as my terminal, DiskInventoryX to better see what files are taking up hard drive space, Flux so I can fall asleep at night, and Spectacle for window management shortcuts.
@@ -31,11 +29,9 @@ Then hit enter and relaunch Finder. I create some basic folder structure here as
 6. Next I configure my .bash_profile. I add some shortcuts, history via the up arrow, color options to the shell, and configure my command prompt. I keep my command prompt pretty simple: just my username, current path, and then git branch information followed by the good ol’ $ sign. I have a few shortcuts for common commands in git, like ‘gitst’ for ‘git status’ and ‘gitco’ for ‘git checkout’. I also make a shortcut for Python’s simple HTTP server, because sometimes it’s useful just to pop it open to look at files served through a real web server. My [dotfiles](https://github.com/hannaliebl/dotfiles) are on Github if you are curious about those.
 
 7. At this point I symlink to <code>subl</code>, Sublime Text’s build in command line tool. This allows me to type ‘subl filename’ and then have that file open up in Sublime. This is done by typing the following into the terminal:
-<pre class="language-bash">
-  <code class="language-bash">
-    ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-  </code>
-</pre>
+~~~bash
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+~~~
 
 8. Then, after I make sure everything in my .bash_profile is working and my command prompt looks like I want it to, I install global npm packages like bower, gulp, grunt, and grunt-cli.
 

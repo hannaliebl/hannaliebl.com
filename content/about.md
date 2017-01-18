@@ -19,4 +19,4 @@ I sometimes [Tweet](https://twitter.com/lieblhan), and I am available for select
 
 ## What About the Site?
 
-I'm glad you asked! This site is statically generated with [Hugo](https://gohugo.io/), a Golang-based site generator. I wrote the CSS myself (though, I borrowed some excellent practices from [Bootstrap](http://getbootstrap.com).) The fonts are served from Google, the icons are from [Font Awesome](https://fortawesome.github.io/Font-Awesome/), and the syntax highlighting uses the [Prism.js](http://prismjs.com/). The entire thing is on [Github](https://github.com/hannaliebl/hannaliebl.com), if you are curious.
+I'm glad you asked! This site is statically generated with [Hugo](https://gohugo.io/), a Golang-based site generator. I wrote the CSS myself (though, I borrowed some excellent practices from [Bootstrap](http://getbootstrap.com).) The fonts are served from Google, the icons are from [Font Awesome](https://fortawesome.github.io/Font-Awesome/), and the syntax highlighting uses the [Highlight.js](https://highlightjs.org/). The entire thing is on [Github](https://github.com/hannaliebl/hannaliebl.com), if you are curious.

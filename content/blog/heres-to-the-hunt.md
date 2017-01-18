@@ -12,20 +12,14 @@ If you’ve done anything with web development (or coding in general), you’ve 
 
 This happened to me a few nights ago. I was going through [Michael Hartl’s Rails Tutorial](http://ruby.railstutorial.org/), and at the end of Chapter 3, I thought it would be fun to install Heroku’s [Postgres.app](http://postgresapp.com/) to better align my Rails development database with Heroku’s production database. The [installation instructions](http://postgresapp.com/documentation) were simple. The problem happened because OS X is installed with another version of postgres, and you had to update your PATH to include the location in /Applications of the Postgres.app in order to use that app and not the default OS X version. I edited my bash profile to include the link given in the documentation:  
 
-<pre class="language-bash">
-  <code class="language-bash">
-    PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-  </code>
-</pre>
-
+~~~bash
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+~~~
 But, little did I know this was actually wrong, and in later versions of Postgres.app the application is named along with the version number. Here’s the right address to add to your PATH, as of this version of postgres.app:
 
-<pre class="language-bash">
-  <code class="language-bash">
-    PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
-  </code>
-</pre>
-
+~~~bash
+PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
+~~~
 So the Googling began. Some people ran into problems with psql installations with Homebrew, which didn’t apply to me. Others had other more obscure problems with their PATH, which also didn’t apply to me.
 
 27 tabs later, I found the answer in a [Github bug report](https://github.com/PostgresApp/PostgresApp/issues/137#issuecomment-27281773) page. It was pretty obvious; in fact, the solution is right there in the name of the app I downloaded, but I was just following the documentation directions a little too strictly. I am a little ashamed to admit I didn’t figure it out sooner. But that’s partially why I’m writing this: hopefully, in your frantic Googling, this page will show up in search results and you will have the answer
