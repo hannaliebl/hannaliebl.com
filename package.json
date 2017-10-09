@@ -1,17 +1,26 @@
 {
-  "name": "hanna liebl's homepage",
+  "name": "hannaliebl.com",
   "version": "1.0.0",
-  "description": "hanna liebl's homepage",
+  "description": "my homepage",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
   },
-  "author": "Hanna Liebl",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannaliebl/hannaliebl.com.git"
+  },
+  "author": "Hann Liebl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannaliebl/hannaliebl.com/issues"
+  },
+  "homepage": "https://github.com/hannaliebl/hannaliebl.com#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-minify-css": "^1.2.4",
-    "gulp-sass": "^2.1.1"
+    "gulp-sass": "^3.1.0"
   }
 }

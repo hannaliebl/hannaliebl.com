@@ -8,5 +8,5 @@ Assuming npm/Node are installed:
 2. [Install Hugo](https://github.com/spf13/hugo#choose-how-to-install)
 3. cd into project folder
 4. Run `npm install`
-5. Run `gulp` to watch and compile CSS from SCSS.
+5. Run `npm run gulp` to watch and compile CSS from SCSS.
 6. Run `hugo server` to serve the site at `localhost:1313`
