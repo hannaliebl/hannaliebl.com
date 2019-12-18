@@ -17,6 +17,9 @@ googleAnalytics = "UA-61564965-3"
   category = "categories"
   worktag = "worktags"
   blogtag = "blogtags"
-  workcategory = "workcategories"
+  workCategory = "work-categories"
   blogcategory = "blogcategories"
   featured = "featured"
+
+[markup.goldmark.renderer]
+  unsafe= true

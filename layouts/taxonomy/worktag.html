@@ -6,7 +6,7 @@
       <h1>Work – {{ .Title }}</h1>
     </div>
   </div>
-{{ range $index, .Paginator.Pages }}
+{{ range .Paginator.Pages }}
   <div class="row work-row">
     <div class="col-6">
       <a href="{{ .Permalink }}"><img class="work-heading-img-section img-responsive" src="{{ .Params.thumbnail}}" /></a>
