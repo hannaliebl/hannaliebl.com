@@ -1,0 +1,187 @@
+$primary-text-color: #444;
+$primary-link-color: #338772;
+$primary-nav-color: #fff;
+$sans-serif-main:"Lato", "Helvetica Neue", Helvetica, sans-serif;
+
+html {
+  font-size: 62.5%;
+  color: $primary-text-color;
+}
+
+body {
+  font-size: 2.2rem;
+  font-family: $sans-serif-main;
+  color: #555;
+  background: $body-bg;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-link-color;
+}
+
+p {
+  line-height: 1.4;
+  @include vertical-text-rhythm()
+}
+ p:last-child {
+   padding-bottom: 0;
+ }
+
+p > a {
+  border-bottom: 1px solid;
+  &:hover {
+    transition: $default-transition;
+    border-bottom: 1px solid $highlight-color;
+  }
+}
+
+p > strong {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: $sans-serif-main;
+  font-weight: 700;
+  @include vertical-heading-rhythm()
+  line-height: 1.2;
+}
+
+li > pre[class*="language-"] {
+  padding-left: 30px;
+}
+
+pre > code[class*="language-"] {
+  margin-bottom: 20px;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+code[class*="language-"] {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2.7rem;
+}
+
+ol, ul {
+  margin-left: 40px;
+  @include vertical-text-rhythm()
+  li {
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+    line-height: 1.4;
+  }
+}
+
+blockquote {
+  background: $content-box;
+  font-style: italic;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 10px solid $secondary-text-color;
+}
+
+code {
+  background: darken(#fff, 5%);
+  padding: 3px 2px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.small {
+  font-size: 1.8rem;
+}
+
+.top-level-navigation a {
+  color: $primary-nav-color;
+}
+
+.page-intro {
+  color: #fff;
+}
+
+.work-heading-section {
+  margin-top: 20px;
+}
+
+.page-intro-heading {
+  font-family: $sans-serif-secondary;
+  font-size: 5.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.page-intro-subheading {
+  font-family: $sans-serif-secondary;
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.page-intro-text {
+  padding-top: 20px;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.post-body h1 {
+  font-size: 3rem;
+}
+
+.post-body h2 {
+  font-size: 2.8rem;
+}
+
+.post-body h3 {
+  font-size: 2.4rem;
+}
+
+.post-body h4 {
+  font-size: 2.2rem;
+}
+
+// non-mobile specific styles
+@media only screen
+and (min-width : 768px) {
+  ol, ul {
+    margin-left: 60px;
+  }
+  .work-heading-section {
+    margin-top: 0px;
+  }
+  .page-intro-heading {
+    font-size: 6.7rem;
+  }
+
+  .page-intro-subheading {
+    font-size: 3rem;
+  }
+
+  .page-intro-text {
+    font-size: 3.5rem;
+  }
+}

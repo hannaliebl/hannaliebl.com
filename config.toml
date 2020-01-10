@@ -17,7 +17,7 @@ googleAnalytics = "UA-61564965-3"
   category = "categories"
   worktag = "worktags"
   blogtag = "blogtags"
-  workCategory = "work-categories"
+  workcategory = "workcategories"
   blogcategory = "blogcategories"
   featured = "featured"
 

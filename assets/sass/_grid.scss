@@ -1,0 +1,80 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  max-width: 850px;
+  width: 100%;
+}
+
+// for better legibility
+.container-constrained {
+  max-width: 650px;
+}
+
+// use in conjunction with .container-constrained for full-width content inside
+// constrained row
+.content-container-expanded {
+  margin: 0;
+}
+
+// target screens larger than main container
+@media only screen
+and (min-width : 850px) {
+  .content-container-expanded {
+    margin: 0 -100px 0 -100px;
+  }
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-6, .col-8, .col-12 {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.clearfix:before, .container:before, .row:before, .inline-image-container:before {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after, .container:after, .row:after, .inline-image-container:after {
+  clear:both;
+  display: table;
+  content: " ";
+}
+
+@media only screen
+and (min-width : 768px) {
+  .col-1 {
+    float: left;
+    width: 100/12 * 1%;
+  }
+  .col-2 {
+    float: left;
+    width: 100/6 * 1%;
+  }
+  .col-3 {
+    float: left;
+    width: 100/4 * 1%;
+  }
+  .col-4 {
+    float: left;
+    width: 100/3 * 1%;
+  }
+  .col-6 {
+    float: left;
+    width: 100/2 * 1%;
+  }
+  .col-8 {
+    float: left;
+    width: (100/12 * 8) * 1%;
+  }
+  .col-12 {
+    float: left;
+    width: 100%;
+  }
+}

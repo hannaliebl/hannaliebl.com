@@ -1,0 +1,113 @@
+// post title in list view
+.post-title {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.work-heading-img-section {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.post-meta {
+  font-family: $sans-serif-secondary;
+  font-weight: 300;
+  color: $post-meta;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.date-posted {
+  text-transform: uppercase;
+  &.mod-single-page {
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+  }
+}
+
+.post-tag, .post-category {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 4px 6px;
+  margin: 2px;
+  border: 2px solid $post-meta-link;
+  color: $post-meta-link;
+  &:hover {
+    transition: $default-transition;
+    border: 2px solid $highlight-color;
+  }
+}
+
+.icon-link {
+  font-size: 2rem;
+  font-family: $sans-serif-secondary;
+  font-weight: 500;
+  color: $post-meta-link;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 20px;
+  &:hover {
+    transition: $default-transition;
+    color: $highlight-color;
+  }
+}
+
+.icon-link.mod-primary-link {
+  background: $post-meta-link;
+  border: 2px solid $post-meta-link;
+  padding: 10px;
+  margin-top: 16px;
+  color: #fff;
+  &:hover {
+    border: 2px solid $highlight-color;
+  }
+}
+
+// container for entire article snippet in list view
+.article-preview {
+  margin-bottom: 20px;
+}
+
+// entire post, single page view
+.post-body {
+  @include vertical-text-rhythm()
+}
+
+.label-control {
+  display: inline-block;
+  font-family: $sans-serif-secondary;
+  background: $primary-link-color;
+  color: #fff;
+  padding: 2px 5px;
+  margin: 4px 0;
+  &:hover {
+    transition: $default-transition;
+    background: $highlight-color;
+    color: #fff;
+  }
+}
+
+ul.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 2px 12px;
+    color: $primary-link-color;
+    text-decoration: none;
+    background-color: #fff;
+    &:hover {
+      transition: $default-transition;
+      background: $highlight-color;
+      color: #fff;
+    }
+}
+
+ul.pagination {
+  font-family:$sans-serif-secondary;
+  margin: 0;
+ li.active a, li.active:hover {
+   color: #fff;
+   background: $primary-link-color;
+ }
+}
