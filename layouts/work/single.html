@@ -7,11 +7,11 @@
       <div class="post-meta">
         <span>POSTED IN:</span>
         {{ range .Params.workcategories }}
-          <a href="/workcategories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
+          <a href="/work/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
         {{ end }}
         <span>TAGS:</span>
         {{ range .Params.worktags }}
-          <a href="/worktags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+          <a href="/work/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
         {{ end }}
         {{if .Params.site_link }}
         <div class="text-center">

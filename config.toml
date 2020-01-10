@@ -23,3 +23,9 @@ googleAnalytics = "UA-61564965-3"
 
 [markup.goldmark.renderer]
   unsafe= true
+
+[permalinks]
+  workcategories = "/work/categories/:slug"
+  worktags = "/work/tags/:slug"
+  blogcategories = "/blog/categories/:slug"
+  blogtags = "/blog/tags/:slug"

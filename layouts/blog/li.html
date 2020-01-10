@@ -5,11 +5,11 @@
       <span class="date-posted">{{ .Date.Format "Jan. 2, 2006" }} // </span>
       <span>POSTED IN:</span>
       {{ range .Params.blogcategories }}
-        <a href="/blogcategories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
+        <a href="/blog/categories/{{ . | urlize }}"><span class="post-category">{{ . }}</span></a>
       {{ end }}
       <span>TAGS:</span>
       {{ range .Params.blogtags }}
-        <a href="/blogtags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
+        <a href="/blog/tags/{{ . | urlize }}"><span class="post-tag">{{ . }}</span></a>
       {{ end }}
     </div>
     <div class="article-body"><p>{{ .Params.summary }}</p></div>
