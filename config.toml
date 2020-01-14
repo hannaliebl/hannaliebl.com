@@ -25,7 +25,7 @@ googleAnalytics = "UA-61564965-3"
   unsafe= true
 
 [permalinks]
-  workcategories = "/work/categories/:slug"
-  worktags = "/work/tags/:slug"
-  blogcategories = "/blog/categories/:slug"
-  blogtags = "/blog/tags/:slug"
+  workcategories = "/work/categories/:title"
+  worktags = "/work/tags/:title"
+  blogcategories = "/blog/categories/:title"
+  blogtags = "/blog/tags/:title"
