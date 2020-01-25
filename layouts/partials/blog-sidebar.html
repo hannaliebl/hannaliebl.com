@@ -1,9 +1,11 @@
 <div class="content-box well">
-  <p>Welcome to my blog–I write mainly about web development and front
-  end design. By day, I work as a JavaScript developer in New Jersey and by
-  night I try to keep up to date with the ever-exciting front end/software development
-  world. Get in touch with me on <a href="https://twitter.com/lieblhan">Twitter</a>
-  or see what I've been learning on <a href="https://github.com/hannaliebl">Github</a>.
+  <p>
+    Welcome to my blog–I write mainly about web development and front end
+    design. By day, I work as a JavaScript developer in New Jersey and by night
+    I try to keep up to date with the ever-exciting front end/software
+    development world. Get in touch with me on
+    <a href="https://twitter.com/lieblhan">Twitter</a> or see what I've been
+    learning on <a href="https://github.com/hannaliebl">Github</a>.
   </p>
 </div>
 <div class="content-box well">
@@ -11,7 +13,9 @@
   <ul class="structure-list sidebar-list">
     {{ range first 10 .Site.Taxonomies.blogcategories.ByCount }}
     <li>
-      <a href="/blog/categories/{{ .Name | urlize }}" class="list-group-item">{{ .Name }}</a>
+      <a href="/blog/categories/{{ .Name | urlize }}" class="list-group-item"
+        >{{ replace .Name "-" " " | title }}</a
+      >
     </li>
     {{ end }}
   </ul>

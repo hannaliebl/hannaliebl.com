@@ -7,7 +7,7 @@
       <h1>{{ .Title }}</h1>
       <ul>
         {{ range $key, $value := .Site.Taxonomies.blogcategories.ByCount }}
-        <li><a href="/blog/categories/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
+        <li><a href="/blog/categories/{{ $value.Name | urlize }}">{{ replace $value.Name "-" " " | title }}</a> ({{ $value.Count }})</li>
         {{ end }}
       </ul>
     </div>

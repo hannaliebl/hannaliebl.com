@@ -1,0 +1,25 @@
+<li>
+  <article class="article-preview">
+    <h2 class="post-title">
+      <a href="{{ .Permalink }}" rel="bookmark" title="Link to {{ .Title }}"
+        >{{ .Title }}</a
+      >
+    </h2>
+    <div class="post-meta">
+      <span class="date-posted">{{ .Date.Format "Jan. 2, 2006" }} // </span>
+      <span>POSTED IN:</span> {{ range .Params.personalblogcategories }}
+      <a href="/personal-blog/categories/{{ . | urlize }}"
+        ><span class="post-category">{{ . }}</span></a
+      >
+      {{ end }} <span>TAGS:</span> {{ range .Params.personalblogtags }}
+      <a href="/personal-blog/tags/{{ . | urlize }}"
+        ><span class="post-tag">{{ . }}</span></a
+      >
+      {{ end }}
+    </div>
+    <div class="article-body"><p>{{ .Params.summary }}</p></div>
+    <a class="icon-link" href="{{ .Permalink }}"
+      >READ MORE <i class="fa fa-arrow-circle-right"></i
+    ></a>
+  </article>
+</li>

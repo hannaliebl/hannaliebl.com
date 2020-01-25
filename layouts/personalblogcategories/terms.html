@@ -1,0 +1,16 @@
+{{ partial "head.html" . }}
+{{ partial "nav.html" . }}
+{{ $data := .Site.Taxonomies.personalblogcategories }}
+<div class="container page-body">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{ .Title }}</h1>
+      <ul>
+        {{ range $key, $value := .Site.Taxonomies.personalblogcategories.ByCount }}
+        <li><a href="/personal-blog/categories/{{ $value.Name | urlize }}">{{ replace $value.Name "-" " " | title }}</a> ({{ $value.Count }})</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" .}}

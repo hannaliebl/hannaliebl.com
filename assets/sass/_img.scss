@@ -2,7 +2,7 @@
   max-width: 100%;
   height: auto;
   display: block;
-  @include img-depth()
+  @include img-depth();
 }
 
 .img-center {
@@ -23,6 +23,9 @@
   margin: 15px;
   &.mod-top-aligned {
     margin-top: 10px;
+  }
+  &.mod-left-aligned {
+    margin-left: 0px;
   }
 }
 
@@ -49,6 +52,5 @@
   }
   .inline-image {
     max-width: 50%;
-    margin: 15px 5px 5px 5px;
   }
 }
