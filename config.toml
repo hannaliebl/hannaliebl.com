@@ -1,5 +1,5 @@
 # .Site config
-baseurl = "http://hannaliebl.com/"
+baseurl = "https://festive-yalow-dc6e41.netlify.com/"
 languageCode = "en-us"
 title = "Hanna Liebl's Site: Web Development Writing and Projects"
 description = ""
