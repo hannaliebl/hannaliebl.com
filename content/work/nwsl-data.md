@@ -5,12 +5,12 @@ draft = false
 featured = ["true"]
 featured_img = "/img/nwsl-data-thumb.jpg"
 summary = "A website with interactive graphs detailing stats for the National Women's Soccer League."
-worktags = ["JavaScript", "D3", "Data Visualization", "AngularJS"]
+worktags = ["JavaScript", "D3", "Data Visualization", "AngularJS", "Node"]
 thumbnail = "/img/work/nwsl-data.png"
 title = "NWSL Data"
-site_link = "http://www.nwsldata.com"
 
 +++
+
 <div class="text-center inline-image-container content-container-expanded">
   <img src="/img/work/nwsl-data.png" alt="A screenshot of a graph showing the total goals scored per player." class="img-responsive img-center"></img>
   <div class="caption-container">
@@ -18,7 +18,9 @@ site_link = "http://www.nwsldata.com"
   </div>
 </div>
 
-I'm a big women's soccer fan, and I saw an opportunity to improve upon the basic tabular data the National Women's Soccer League made available on its [stats page](www.nwslsoccer.com/Stats/index_E.html) by making a site displaying those statistics as interactive graphs. I used AngularJS, a powerful front-end JavaScript framework, in conjunction with D3, the premier JavaScript data-binding and visualization library.
+_Note:_ I let the domain expire, so this project lives on [Github](https://github.com/hannaliebl/nwsl-data) only.
+
+I'm a big women's soccer fan, and I saw an opportunity to improve upon the basic tabular data the National Women's Soccer League made available on its [stats page](//www.nwslsoccer.com/Stats/index_E.html) by making a site displaying those statistics as interactive graphs. I used AngularJS, a powerful front-end JavaScript framework, in conjunction with D3, the premier JavaScript data-binding and visualization library.
 
 <div class="text-center inline-image-container">
   <img src="/img/work/nwsl-data-3.png" alt="Goals scored, filtered down by team, in this case, Portland" class="img-responsive img-center"></img>

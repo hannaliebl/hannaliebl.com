@@ -4,12 +4,13 @@ date = "2014-11-30T14:00:00-00:00"
 draft = false
 featured = ["false"]
 featured_img = ""
-summary = "Design and development work completed while working for Postano."
+summary = "Design and development work completed while working for Postano from 2013 - 2014."
 worktags = ["Web Design", "JavaScript", "AngularJS"]
 thumbnail = "/img/work/essence-context.png"
 title = "Postano Social Media Visualizations and Event Displays"
 
 +++
+
 <div class="text-center inline-image-container content-container-expanded">
   <img src="/img/work/essence-context.png" alt="Postano's social media event display at the Superdome in New Orleans during Essence Festival" class="img-responsive img-center"></img>
   <div class="caption-container">
@@ -58,7 +59,6 @@ At the Superdome, I created a custom display that served as the backdrop to the 
 ## Customized Social-Powered Displays
 
 I worked with a lot of great brands, companies, and sports teams to help them build their displays. Two examples of great designs and interesting events were Buzzfeed's Bowties and Burgers party during the White House Correspondent's Dinner in 2014 and the Boston Red Sox's stadium installation.
-
 
 ### Bowties and Burgers
 

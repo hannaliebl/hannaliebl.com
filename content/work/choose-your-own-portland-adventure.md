@@ -11,12 +11,15 @@ title = "Choose Your Own Portland Adventure"
 summary = "A Backbone application using the Yelp API to help users find interesting things to do in Portland, Oregon."
 site_link = "http://portland-adventure.herokuapp.com/"
 +++
+
 <div class="text-center inline-image-container content-container-expanded">
   <img src="/img/work/choose-your-own-portland-adventure.png" alt="A screenshot of the front page of our application, featuring Portland's current weather." class="img-responsive img-center"></img>
   <div class="caption-container">
     <div class="inline-image-caption">The first page of our application, featuring Portland's current weather.</div>
   </div>
 </div>
+
+_Note:_ This project is fairly old at this point, and some API keys are no longer updated, so the app doesn't fully work anymore.
 
 I took an evening JavaScript class at Portland Code School in the summer of 2014, and the final three weeks of the course were devoted to developing a capstone project. My two other group members and I spent the time designing and building the Choose Your Own Portland Adventure app. The goal was to provide users with an easy interface to click through options and then get a Mad Libs-type story at the end with custom results from Yelp.
 
