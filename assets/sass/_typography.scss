@@ -48,20 +48,6 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 
-li > pre[class*="language-"] {
-  padding-left: 30px;
-}
-
-pre > code[class*="language-"] {
-  margin-bottom: 20px;
-  padding: 2rem;
-  font-size: 1.5rem;
-}
-
-code[class*="language-"] {
-  line-height: 1.2;
-}
-
 h1 {
   font-size: 4.2rem;
 }
@@ -96,11 +82,6 @@ blockquote {
   padding: 20px;
   margin-bottom: 20px;
   border-left: 10px solid $secondary-text-color;
-}
-
-code {
-  background: darken(#fff, 5%);
-  padding: 3px 2px;
 }
 
 .text-right {

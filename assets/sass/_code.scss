@@ -1,0 +1,20 @@
+.highlight {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  @include vertical-text-rhythm();
+}
+
+.highlight > pre {
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+code {
+  background: darken(#fff, 5%);
+  padding: 3px 2px;
+}
+
+pre code {
+  background: inherit;
+}
