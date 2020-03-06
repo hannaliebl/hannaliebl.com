@@ -27,6 +27,7 @@ And that's how it stayed for almost four years, until I started poking around wi
 I did another forum search in 2020 and came across [this post](https://discourse.gohugo.io/t/how-to-configure-a-taxonomy-under-a-section-with-multiple-taxonomy-terms/13806/16) that said to use permalinks to re-assign taxonomies to custom URLs.
 
 So in my config.toml I added this:
+
 ```toml
 [permalinks]
   workcategories = "/work/categories/:title"
@@ -47,7 +48,7 @@ This is best seen with an example, so I'll walk through how I made the `/blog/ta
 1. First, add a `/content/blog/tags` folder and include an `_index.md` file inside of it.
 2. Add front matter to that markdown file. Note that this front matter is meant to be a markdown table (the forum post example above doesn't make that clear, but it is the format front matter takes). Here is how that markdown file looks:
 
-   ```python
+   ```md
     ---
     title: Blog Tags
     type: blogtags
