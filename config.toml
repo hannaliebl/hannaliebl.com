@@ -1,5 +1,5 @@
 # .Site config
-baseurl = "http://www.hannaliebl.com"
+baseurl = "https://www.hannaliebl.com"
 languageCode = "en-us"
 title = "Hanna Liebl's Site: Web Development Writing and Projects"
 description = ""
