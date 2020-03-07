@@ -5,7 +5,7 @@ title = "Moving to Netlify Part One: Hugo on Netlify"
 blogcategories = ["Guide"]
 blogtags = ["Static Sites", "Hugo", "Netlify"]
 featured = ["false"]
-summary = "I moved this site to Netlify, and write about how it works with Hugo to improve my deployment process (and how I fixed syntax higlighting on this blog.)"
+summary = "I moved this site to Netlify, and write about how it works with Hugo to improve my deployment process (and how I fixed syntax highlighting on this blog.)"
 +++
 
 This site is now being hosted on [Netlify](https://www.netlify.com/). Netlify is an "all-in-one platform for modern web projects." They have a free tier that allows you to, essentially, host your site on their CDN, hook up to a Github repository, and then run a build command on every commit to deploy your site. They offer a lot of serverless extras like form handling and paid solutions for identity management, but at its core for someone like me, Netlify is a static site deployment and hosting solution packaged in a user-friendly UI.
