@@ -1,5 +1,5 @@
 +++
-date = ""
+date = {{ .Date }}
 draft = true
 title = ""
 blogcategories = [""]

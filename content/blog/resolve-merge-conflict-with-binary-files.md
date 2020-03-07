@@ -21,11 +21,11 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 You can’t just go through the image file and take parts of it from their branch that you want and parts of it from your branch that you want like you would with other text-based files in Git. Instead, you need to decide which version you want: theirs (in this case, master) or yours.
 
-### If you want their changes:
+## If you want their changes:
 
 `git checkout master a-snapshot.jpg` (replace `master` with whatever their branch is if it isn’t master.)
 
-### If you want your changes:
+## If you want your changes:
 
 `git add a-snapshot.jpg`
 
