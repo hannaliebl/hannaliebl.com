@@ -1,7 +1,6 @@
 $primary-text-color: #444;
 $primary-link-color: #338772;
 $primary-nav-color: #fff;
-$sans-serif-main:"Lato", "Helvetica Neue", Helvetica, sans-serif;
 
 html {
   font-size: 62.5%;
@@ -23,11 +22,11 @@ a {
 
 p {
   line-height: 1.4;
-  @include vertical-text-rhythm()
+  @include vertical-text-rhythm();
 }
- p:last-child {
-   padding-bottom: 0;
- }
+p:last-child {
+  padding-bottom: 0;
+}
 
 p > a {
   border-bottom: 1px solid;
@@ -41,11 +40,13 @@ p > strong {
   font-weight: 400;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: $sans-serif-main;
   font-weight: 700;
-  @include vertical-heading-rhythm()
-  line-height: 1.2;
+  @include vertical-heading-rhythm() line-height: 1.2;
 }
 
 h1 {
@@ -64,10 +65,10 @@ h4 {
   font-size: 2.7rem;
 }
 
-ol, ul {
+ol,
+ul {
   margin-left: 40px;
-  @include vertical-text-rhythm()
-  li {
+  @include vertical-text-rhythm() li {
     margin-bottom: 7.5px;
     margin-top: 7.5px;
     line-height: 1.4;
@@ -146,9 +147,9 @@ blockquote {
 }
 
 // non-mobile specific styles
-@media only screen
-and (min-width : 768px) {
-  ol, ul {
+@media only screen and (min-width: 768px) {
+  ol,
+  ul {
     margin-left: 60px;
   }
   .work-heading-section {

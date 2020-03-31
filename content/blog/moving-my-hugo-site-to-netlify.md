@@ -1,7 +1,7 @@
 +++
 date = "2020-03-07T01:07:13-05:00"
 draft = false
-title = "Moving to Netlify Part One: Hugo on Netlify"
+title = "Moving My Hugo Site to Netlify"
 blogcategories = ["Guide"]
 blogtags = ["Static Sites", "Hugo", "Netlify"]
 featured = ["false"]
@@ -41,5 +41,5 @@ You can also opt to include a `netlify.toml` config file in your Hugo project, a
 
 ## Downsides?
 
-S3 can handle any amount of traffic and charges you pennies per GB. Netlify has bandwidth limits (at the time of writing, 100 GB per month for the free tier, 20$ per 100 GB after that.) S3 keeps you in the AWS ecosystem, which some people may prefer. For a low-traffic site like mine, so far, the ease of deployment and HTTPS support is well worth the switch from S3 to Netlify. (My next post, coming soon, will cover the HTTPS part.)
+S3 can handle any amount of traffic and charges you pennies per GB. Netlify has bandwidth limits (at the time of writing, 100 GB per month for the free tier, 20$ per 100 GB after that.) S3 keeps you in the AWS ecosystem, which some people may prefer. For a low-traffic site like mine, so far, the ease of deployment and HTTPS support is well worth the switch from S3 to Netlify.
 
