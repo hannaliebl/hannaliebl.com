@@ -9,7 +9,7 @@ featured_img = "/img/epic-react-thumbnail.png"
 summary = "My notes from the first workshop in Epic React, React Fundamentals, mostly covering things I learned about JSX"
 +++
 
-I'm taking Kent Dodd's [Epic React](https://epicreact.dev/) course, and I thought in an effort to revive this blog, I'd share my notes as I go through it. For this workshop, I'm not summarizing everything that he teaches, but rather writing up notes on the parts where I learned something. I also appreciated that Kent encourages people who take the course to write what they learn from it as a way of reinforcing their own knowledge, so this is also part of that process for me. I'm trying to [learn in public](https://www.swyx.io/learn-in-public/)!
+I'm taking Kent Dodds' [Epic React](https://epicreact.dev/) course, and I thought in an effort to revive this blog, I'd share my notes as I go through it. For this workshop, I'm not summarizing everything that he teaches, but rather writing up notes on the parts where I learned something. I also appreciated that Kent encourages people who take the course to write what they learn from it as a way of reinforcing their own knowledge, so this is also part of that process for me. I'm trying to [learn in public](https://www.swyx.io/learn-in-public/)!
 
 I'm mostly taking this course because I think [Kent Dodds](https://kentcdodds.com/) is a great teacher and "thought leader" in the React/modern JS world and because I wanted a solid introduction to the more recent parts of React that I don't use as much (we are still mostly in class-land for work, though we are looking to change that coming up soon.) Also, I have a nice continuing education budget, thanks, [Ad Hoc](https://adhoc.team/)!
 
