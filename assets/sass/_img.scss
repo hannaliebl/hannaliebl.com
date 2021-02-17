@@ -29,6 +29,11 @@
   }
 }
 
+.img-expanded-container {
+  margin-left: -150px;
+  margin-right: -150px;
+}
+
 .block-image {
   margin: 10px 0;
 }
@@ -52,5 +57,12 @@
   }
   .inline-image {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .img-expanded-container {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
