@@ -29,7 +29,7 @@ I make a `code/` folder at my user root. I am still experimenting with the best 
 
 I go ahead and install some software at this point. I download Chrome and Firefox as additional web browsers, VS Code as my code editor of choice, [Typora](https://typora.io/) as my preferred markdown editor (I try to keep and save notes in markdown), and Zoom, Slack, and Discord for general communication/being a part of various communities.
 
-I'll have more VS Code-specific settings later, but at this point I like to install the command line tool for VS Code, so that I can open a given file with it from the command line (Open VS Code - shift-command-p to open Command Palette - type 'shell command' - select "Shell Command: Install 'code' command in PATH"). This now allows me, after relaunching or reloading my terminal, to open a file directly in VS Code by typine `code filename`.
+I'll have more VS Code-specific settings later, but at this point I like to install the command line tool for VS Code, so that I can open a given file with it from the command line (Open VS Code - shift-command-p to open Command Palette - type 'shell command' - select "Shell Command: Install 'code' command in PATH"). This now allows me, after relaunching or reloading my terminal, to open a file directly in VS Code by typing `code filename`.
 
 I used [Spectacle](https://github.com/eczarny/spectacle) for years to easily resize/move windows around, but since it stopped being actively developed, I've been trying out [Rectangle](https://github.com/rxhanson/Rectangle) to do the same job, so I also install Rectangle and set it up with the default settings.
 
@@ -110,13 +110,15 @@ Then I set up my Go environment. I install Go via `brew install go`, and set my 
 
 I'm getting close, but my last step is customizing my editor of choice, VS Code.
 
-### Theme/Icons
+### Theme/Icons/Font
 
 I switch between [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) and [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) themes. I use the [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) set.
 
+I use the [Fira Code](https://github.com/tonsky/FiraCode) font because I like its ligature support - instructions are [here](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions) for adding it to VS Code.
+
 ### Packages
 
-I have some language-specific packages: [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel), [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Go](https://code.visualstudio.com/docs/languages/go),
+I have some language-specific packages: [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel), [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), and [Go](https://code.visualstudio.com/docs/languages/go).
 
 I also install [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and a [Formatting Toggle](https://marketplace.visualstudio.com/items?itemName=tombonnike.vscode-status-bar-format-toggle) extension to toggle whether or not Prettier should be used or not on a per-file basis (sometimes I do work on projects that don't use Prettier.)
 
