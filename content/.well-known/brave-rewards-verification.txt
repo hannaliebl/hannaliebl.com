@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: hannaliebl.com
+Token: da6b38b2e392cf2f73b6096c25fcf58b179493d490c7fee300fc65306b959a62
