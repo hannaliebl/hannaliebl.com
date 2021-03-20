@@ -8,7 +8,7 @@ featured = ["false"]
 summary = "Learn how to kill those pesky runaway Node (or other) processes using the `lsof` and `kill` commands."
 +++
 
-Another snippet post! Snippets are my attempt to write short posts about common problems or short concepts that I run into during development.
+Another snippet post! [Snippets](/blog/categories/snippets) are my attempt to write short posts about common problems or short concepts that I run into during development.
 
 This happens from time to time to me, particularly with runaway Node processes. You try to start your app on localhost, but get a message like: `EADDRINUSE, Address already in use` or maybe `listen tcp 127.0.0.1:3000: bind: address already in use`. You don't have anything running on the port that you can find to stop, though, so what do you do?
 
