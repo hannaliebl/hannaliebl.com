@@ -20,7 +20,7 @@ To narrow down the specific process that is running on a given port, use the `-i
 
 This will print some columnar data for you. It might look something like this:
 
-```
+```text
 COMMAND  PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 node    5750 hanna   28u  IPv4 0x66edcffc34e07861      0t0  TCP *:hbci (LISTEN)
 ```
@@ -33,6 +33,6 @@ Now, you can use this PID to kill the runaway process with the `kill` command! I
 
 To follow along with the example above, this is how I would kill that pesky Node process I found with `lsof` above:
 
-```
+```text
 kill -9 5750
 ```

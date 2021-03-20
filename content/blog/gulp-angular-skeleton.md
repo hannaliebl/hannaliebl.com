@@ -4,10 +4,11 @@ date = "2014-09-17T00:00:00-00:00"
 draft = false
 featured = ["false"]
 summary = "My starter template for Angular apps, using Gulp."
-blogtags = ["Angular 1", "Gulp", "Task Runners", "SASS"]
+blogtags = ["AngularJS", "Gulp", "Task Runners", "SASS"]
 title = "Gulp Angular Skeleton: A Front End App Skeleton for Building Angular Apps"
 
 +++
+
 I’m a fan of [Grunt](http://gruntjs.com/), particularly in combination with [Yeoman](http://yeoman.io/), but I wanted to try my hand at [Gulp](http://gulpjs.com/), another task runner, but based on Node streams. So as a weekend project I decided to set up my own Gulp-based Angular project. (If you want to get right to the code the whole thing is on [Github](https://github.com/hannaliebl/gulp-angular-skeleton), and my annotated Gulpfile is available as a [Gist](https://gist.github.com/hannaliebl/0a4fa4ff39445649452e).)
 
 I wanted the following functionality from Gulp:
@@ -39,57 +40,59 @@ The second task is ‘gulp build’, meant to be run when you want to build a de
 
 There are some trip ups that I found, however. First is the way Gulp handles errors. Some examples I found online have you write a task like this, for example:
 
-~~~javascript
-gulp.task('empty-dist', function() {
-  gulp.src(paths.build.main, { read: false })
-  .pipe(rimraf());
+```javascript
+gulp.task("empty-dist", function () {
+  gulp.src(paths.build.main, { read: false }).pipe(rimraf());
 });
-~~~
+```
 
 This doesn’t work, however, because the gulp.src is not returned. This is [described](https://github.com/gulpjs/gulp/blob/master/docs/API.md#async-task-support) in Gulp’s own documentation for handling asynchronous events, but basically, you should return gulp.src in order for it to work:
 
-~~~javascript
-gulp.task('empty-dist', function() {
-  return gulp.src(paths.build.main, { read: false })
-  .pipe(rimraf());
+```javascript
+gulp.task("empty-dist", function () {
+  return gulp.src(paths.build.main, { read: false }).pipe(rimraf());
 });
-~~~
+```
 
 The second issue related to errors is the way the gulp-jshint package handles error events. Basically, if you don’t allow for it, an error that jshint catches will stop the gulp.watch task, which is annoying if you are continually working in a file and have to constantly restart your watch task. The solution, for now, as best I could tell, is to explicitly add an end event to the stream. I did this by adding a simple error handler callback:
 
-~~~javascript
-function errorHandler (error) {
-  this.emit('end');
+```javascript
+function errorHandler(error) {
+  this.emit("end");
 }
-~~~
+```
 
 And then in the jshint task, calling it like so:
 
-~~~javascript
+```javascript
 .pipe(jshint()).on('error', errorHandler)
-~~~
+```
 
 The final problem I ran into is how to define a set order for tasks. Again, the asynchronous nature of Gulp means that without defining an order, there is no guarantee the task you want to run first in a set of tasks will actually run or complete first. This is important in the build task, mainly, because before copying over HTML and minifying and concatting JS files I first want to clear out the dist/ folder of any old builds. This is also thankfully [well-defined](https://github.com/gulpjs/gulp/blob/master/docs/recipes/running-tasks-in-series.md) in the Gulp documentation, but the way you do it is write a task that accepts another task as a dependency. In my case, I wrote a build task and had it depend on a bunch of other tasks that handle all the separate pieces of the build, like a single task to simply copy the CSS over. Inside those dependent task definitions, though, I also gave them all a dependency: the empty-dist task, which is the task that actually clears out the dist/ folder in case there was anything left over from an old build. Even though all of the tasks have empty-dist as a dependency, it only runs once, and it runs in the correct order: before everything else.
 
 Here is an example from my gulpfile. First, the build task, with all its dependencies defined in an array. After all those tasks run does the anonymous function run and the build task is complete. In this case, the anonymous function handles JavaScript uglifying:
 
-~~~javascript
-gulp.task('build', ['bower-files', 'copy-css', 'copy-server', 'copy-html-files'], function() {
-  return gulp.src(['./app/public/js/**/*.js', '!./app/public/bower_components/**'])
-  .pipe(ngAnnotate())
-  .pipe(uglify())
-  .pipe(concat('app.min.js'))
-  .pipe(gulp.dest(paths.build.js))
-});
-~~~
+```javascript
+gulp.task(
+  "build",
+  ["bower-files", "copy-css", "copy-server", "copy-html-files"],
+  function () {
+    return gulp
+      .src(["./app/public/js/**/*.js", "!./app/public/bower_components/**"])
+      .pipe(ngAnnotate())
+      .pipe(uglify())
+      .pipe(concat("app.min.js"))
+      .pipe(gulp.dest(paths.build.js));
+  }
+);
+```
 
 Next is an example of a dependent task from above, which in turn has `empty-dist` as a dependency. Before `copy-css` begins, `empty-dist` must run. All the dependencies from above have `empty-dist` as a dependency themselves.
 
-~~~javascript
-gulp.task('copy-css', ['empty-dist'], function () {
-  return gulp.src('./app/public/css/*.css')
-  .pipe(gulp.dest('dist/public/css'));
+```javascript
+gulp.task("copy-css", ["empty-dist"], function () {
+  return gulp.src("./app/public/css/*.css").pipe(gulp.dest("dist/public/css"));
 });
-~~~
+```
 
 And that’s an introduction to Gulp and to my basic app skeleton framework. Let me know if you use it or if you have any other comments!
