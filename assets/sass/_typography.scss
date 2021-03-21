@@ -142,6 +142,11 @@ blockquote {
   font-size: 2.2rem;
 }
 
+.recent-posts-date {
+  display: inline-block;
+  width: 13rem;
+}
+
 // non-mobile specific styles
 @media only screen and (min-width: 768px) {
   ol,

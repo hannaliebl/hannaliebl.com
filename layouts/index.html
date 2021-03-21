@@ -13,6 +13,18 @@
   </div>
   <div class="row">
     <div class="col-12">
+      <h2>Recent Posts</h2>
+      <ul class="structure-list">
+      {{ range ( first 5 ( where .Site.Pages "Section" "blog" ).ByDate.Reverse ) }}
+        {{ if .Params.blogtags }}
+        <li><h3><span class="small recent-posts-date">{{ .Date.Format "Jan. 2, 2006" }}</span><a href="{{ .Permalink }}">{{ .Title }}</a></h3></li>
+        {{end}}
+      {{ end }}
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
       <h2>Featured Posts and Projects</h2>
     </div>
   </div>
