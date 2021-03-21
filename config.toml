@@ -8,6 +8,7 @@ preserveTaxonomyNames = true
 paginate = 5
 disqusShortname = "hannaliebl"
 googleAnalytics = "UA-61564965-3"
+canonifyurls = true
 
 [author]
   name = "Hanna Liebl"
