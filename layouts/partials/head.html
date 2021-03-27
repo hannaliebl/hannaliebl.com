@@ -16,6 +16,7 @@
       <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
       {{ "<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->" | safeHTML }}
       {{ template "_internal/google_analytics.html" . }}
+      {{ template "_internal/twitter_cards.html" . }}
       {{ "<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->" | safeHTML }}
       {{ "<!--[if lt IE 9]>" | safeHTML }}
               <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
