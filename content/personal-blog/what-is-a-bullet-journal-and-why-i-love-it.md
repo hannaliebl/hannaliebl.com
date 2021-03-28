@@ -5,10 +5,18 @@ title = "What Is a Bullet Journal, and Why I Love It"
 personalblogcategories = ["Guides"]
 personalblogtags = ["Bullet Journaling", "Organization"]
 featured = ["false"]
+images=["/img/twitter-card-what-is-a-bullet-journal.jpg"]
 summary = "My guide to what bullet journaling is and why I think it's such a good system for organization and also a system that can drive behavioral change."
 +++
 
 Bullet journaling changed my life–seriously! Bullet journaling changed the way I organize my life and is also a helpful system for discovering what is actually worth spending my mental energy on. I started bullet journaling almost exactly two years ago. I went down a deep rabbit hole of the "bujo" influencer community on social media (this is a real thing!), and then actually tried to keep my own journal. I've had a few people ask me for advice and recommendations, so here it is for them, and anyone else who finds this interesting.
+
+<div class="text-center inline-image-container">
+  <img src="/img/twitter-card-what-is-a-bullet-journal.jpg" alt="The empty weekly spread of my bullet journal." class="img-responsive img-center"></img>
+  <div class="caption-container">
+    <div class="inline-image-caption">The empty weekly spread of my bullet journal.</div>
+  </div>
+</div>
 
 ## What Is Bullet Journaling?
 
