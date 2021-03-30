@@ -18,10 +18,8 @@ canonifyurls = true
   category = "categories"
   worktag = "worktags"
   blogtag = "blogtags"
-  personalblogtag = "personalblogtags"
   workcategory = "workcategories"
   blogcategory = "blogcategories"
-  personalblogcategory = "personalblogcategories"
   featured = "featured"
 
 [markup.goldmark.renderer]
@@ -43,5 +41,3 @@ canonifyurls = true
   worktags = "/work/tags/:title"
   blogcategories = "/blog/categories/:title"
   blogtags = "/blog/tags/:title"
-  personalblogcategories = "/personal-blog/categories/:title"
-  personalblogtags = "/personal-blog/tags/:title"

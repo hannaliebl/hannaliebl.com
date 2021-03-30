@@ -47,11 +47,6 @@
                     <span class="post-tag">{{ . }}</span>
                   {{ end }}
                 {{ end }}
-                {{ if .Params.personalblogtags }}
-                  {{ range .Params.personalblogtags }}
-                    <span class="post-tag">{{ . }}</span>
-                  {{ end }}
-                {{ end }}
               </div>
               <span class="img-credit">{{ .Params.img_credit }}</span>
             </div>
