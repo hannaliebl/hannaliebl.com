@@ -6,6 +6,7 @@ blogcategories = ["Guide"]
 blogtags = ["Career", "Interviewing", "Remote Work"]
 featured = ["true"]
 featured_img = "/img/thoughts-on-interviewing-2021.jpg"
+images=["/img/thoughts-on-interviewing-2021-twitter.jpg"]
 img_credit = "Photo: wocintechchat.com"
 summary = "After going through a job search, here are my thoughts on applying and interviewing for software developer roles in 2021."
 +++
