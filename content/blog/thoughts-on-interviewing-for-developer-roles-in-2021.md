@@ -78,10 +78,10 @@ She recommends writing down the projects you've worked on, and for each project,
 
 Thinking about your projects in this way will help with behavioral interview questions, and will help your answers to be specific. Once I had these projects written down, I practiced speaking aloud about them. Like with technical interviews, I do think behavioral interviews can also be made easier with a bit of practice.
 
-I also make sure to research the companies I am applying to, and read some of their recent blog posts, if applicable. In general, I try to have a coherent story about why I am applying: how my experience and current interests make me a compelling candidate, and knowing at least a little about the company makes that story more realistic.
+I also made sure to research the companies I applied to, and read some of their recent blog posts, if possible. This all comes back to selling your story: you have to understand what the company is doing and what they value, and how you can fit in and help them.
 
 ## Getting a Job
 
-In the end, I did get a new job I was excited about! This was the most strategic I'd been with a job search, but also the most difficult search. I am less likely to compromise on companies, and in turn, they demand more in interviews. In general, I think the industry is getting more competitive, but there are still amazing opportunities out there.
+In the end, I did get a new job I was excited about! This was the most strategic I'd been with a job search, but also the most difficult search. I am less likely to compromise on companies, and I find that in turn, they demand more in interviews. In general, I think the industry is getting more competitive, but there are still amazing opportunities out there.
 
 Do you have advice or insight into applying for software developer jobs in 2021? I'd love to hear your thoughts.
