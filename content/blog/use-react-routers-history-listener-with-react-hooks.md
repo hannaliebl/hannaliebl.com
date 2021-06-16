@@ -1,5 +1,5 @@
 +++
-title = "Use React Routers History Listener With React Hooks"
+title = "Use React Router's History Listener With React Hooks"
 date = 2021-06-16T07:06:30-04:00
 draft = false
 blogcategories = ["JavaScript"]
