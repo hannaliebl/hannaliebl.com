@@ -30,6 +30,8 @@ I've also gotten to use some new front-end libraries and patterns that I've not 
 
 I did some more freelance work with [Track1099](https://www.track1099.com/), mostly helping implement a redesign of their website. I appreciated getting to do some pure CSS/HTML work.
 
+Finally, I started using [Obsidian](https://obsidian.md/) for my notes this year. I wrote a [whole post](https://www.hannaliebl.com/blog/using-obsidian-for-software-development-notes/) on how useful I find Obsidian for software development notes.
+
 ## The Rest of Life Outside Work
 
 Outside of work, a lot has happened. Obviously, the continuation of the COVID-19 pandemic affected my life and psyche, as I'm sure it did for almost anyone reading this. But we also bought a house and moved (back) to Massachusetts this year. This was my first full year of being a parent, too. I was extremely grateful to both the companies I worked for in 2021 for being flexible to me as a new parent and as a parent during COVID.
