@@ -2,8 +2,8 @@
 date = 2021-04-29T10:51:39-05:00
 draft = false
 title = "React Testing Library Cleanup Vs. Enzyme"
-blogcategories = ["Snippets"]
-blogtags = ["JavaScript", "React", "Unit Testing"]
+blogcategories = ["Snippets", "JavaScript"]
+blogtags = ["JavaScript", "React", "Unit Testing", "React Testing Library"]
 featured = ["false"]
 summary = "React Testing Library runs a cleanup function after every test while Enzyme does not, and that means that some (uncommon) testing patterns that work in Enzyme won't work in React Testing Library."
 +++
@@ -21,6 +21,7 @@ It also means that you can't `render` a component and then run a bunch of tests 
 The fact that Enzyme doesn't cleanup automatically after every test isn't explicitly documented, but I did find an [issue from 2017](https://github.com/enzymejs/enzyme/issues/911) that confirms that it does not.
 
 This means you can do something like this in Enzyme:
+
 ```javascript
 import { mount } from 'enzyme';
 
@@ -40,6 +41,7 @@ describe("MyComponent", () => {
 ```
 
 But this will not work in RTL:
+
 ```javascript
 import { render } from "testing-library/react"
 
@@ -57,6 +59,7 @@ describe("MyComponent", () => {
 ```
 
 Instead, you would move the render inside every it block:
+
 ```javascript
 import { render } from "testing-library/react"
 

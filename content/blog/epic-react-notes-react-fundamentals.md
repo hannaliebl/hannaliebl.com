@@ -4,7 +4,7 @@ draft = false
 title = "Epic React Notes: React Fundamentals"
 blogcategories = ["JavaScript"]
 blogtags = ["React", "Learn in Public"]
-featured = ["true"]
+featured = ["false"]
 featured_img = "/img/epic-react-thumbnail.png"
 summary = "My notes from the first workshop in Epic React, React Fundamentals, mostly covering things I learned about JSX"
 +++
