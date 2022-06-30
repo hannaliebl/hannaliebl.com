@@ -12,7 +12,7 @@ title = "About"
   </div>
 </div>
 
-I've been a developer since 2012, when I started making Wordpress sites. I currently work for [Truss](https://truss.works/), helping to make government digital services better. Before that, I worked for [Ad Hoc](https://adhocteam.us/), where I helped improve the enrollment experience on healthcare.gov, and before that, I worked for startups in Portland, Oregon, doing primarily JavaScript development. These days I tend to work primarily in React, but I have interest and some experience in Node, Go, and Ruby/Rails.
+I've been a developer since 2012, when I started making Wordpress sites. I currently work as a software engineer for [Jellyfish](https://jellyfish.co/), where I primarily do frontend work to build Jellyfish's engineering management platform. Before that, I spent almost five years in civic tech at [Truss](https://truss.works/) and [Ad Hoc](https://adhocteam.us/), helping to make government digital services better (like healthcare.gov!) I started my career in Portland, Oregon working for a couple of startups. These days I tend to work primarily in React/TypeScript, but I have interest and some experience in Node, Go, and Ruby/Rails.
 
 Outside of programming, I enjoy reading, hiking, playing video games, Crossfit, and spending time with my family.
 
@@ -22,4 +22,4 @@ I sometimes [Tweet](https://twitter.com/lieblhan), and I am available for select
 
 I'm glad you asked! This site is statically generated with [Hugo](https://gohugo.io/), a Golang-based site generator. I wrote the CSS myself (though, I borrowed some excellent practices from [Bootstrap](http://getbootstrap.com).) The fonts are served from Google, and the icons are from [Font Awesome](https://fortawesome.github.io/Font-Awesome/). The entire thing is on [Github](https://github.com/hannaliebl/hannaliebl.com), if you are curious.
 
-<p class="small">Last Updated: 4/8/2021</p>
+<p class="small">Last Updated: 6/30/2022</p>
