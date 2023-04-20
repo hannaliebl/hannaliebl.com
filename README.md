@@ -17,6 +17,6 @@ TODO:
 - [X] Remove outdated project links, mention when projects no longer work due to domain name expiration, API access issues, etc
 - [X] Finish personal blog section/li/single styles
 - [ ] Refine build options
-- [ ] Get Post CSS to work
+- [X] Get Post CSS to work
 - [ ] Image min?
 - [ ] Redesign/rethink featured posts
